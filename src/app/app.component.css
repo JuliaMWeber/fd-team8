@@ -6,6 +6,14 @@ h1 {
   text-align: center;
 }
 
+.schreibtisch {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 .er-body {
   background-size: cover;
   background: url("src/img/raum.svg") no-repeat fixed 50% 50%;
@@ -15,10 +23,5 @@ h1 {
   background-size: cover;
 }
 
-.schreibtisch {
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-}
+
