@@ -14,7 +14,7 @@ h1 {
 
 }
 
-.er-body {
+.er-mitte {
   background-size: cover;
   background: url("src/img/raum.svg") no-repeat fixed 50% 50%;
   -webkit-background-size: cover;
@@ -23,5 +23,8 @@ h1 {
   background-size: cover;
 }
 
+.fullHeight{
+  height: 100vh
+}
 
 
