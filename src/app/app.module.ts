@@ -9,10 +9,14 @@ import { HeaderComponent } from './header/header.component';
 import { VorstellungComponent } from './vorstellung/vorstellung.component';
 import { SpielregelnComponent } from './spielregeln/spielregeln.component';
 import { ErklaerungComponent } from './erklaerung/erklaerung.component';
+import { ErRechtsComponent } from './er-rechts/er-rechts.component';
+import { ErLinksComponent } from './er-links/er-links.component';
 
 const appRoutes: Routes=[
   {path: 'start', component: OnepagerComponent},
   {path: 'escape', component: EscaperoomComponent},
+  {path: "rechts", component: ErRechtsComponent},
+  {path: "links", component: ErLinksComponent},
   {path: '', redirectTo: '/start', pathMatch:'full'}
 ]
 @NgModule({
@@ -23,7 +27,9 @@ const appRoutes: Routes=[
     HeaderComponent,
     VorstellungComponent,
     SpielregelnComponent,
-    ErklaerungComponent
+    ErklaerungComponent,
+    ErRechtsComponent,
+    ErLinksComponent
   ],
   imports: [
     BrowserModule,

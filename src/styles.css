@@ -1,9 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap";
 
-.er-body {
+.er-mitte {
   background-size: cover;
-  background: url("src/img/raum.svg") no-repeat fixed 50% 50%;
+  background: url("src/img/raum_mitte.svg") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.er-rechts{
+  background-size: cover;
+  background: url("src/img/raum-rechts.svg") no-repeat fixed 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,6 +24,13 @@
 .escape-nav-btn{
   display: flex;
   justify-content: space-between;
+  padding: 1%;
+}
+
+.escape-nav-btn-l{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
 }
 
 app-escaperoom{
