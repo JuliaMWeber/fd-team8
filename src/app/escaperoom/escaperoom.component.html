@@ -1,6 +1,173 @@
 <div class="er-mitte fullHeight">
   <div class="escape-nav-btn fullHeight">
     <button routerLink="/links">&#5130;</button>
-    <button routerLink="/rechts">&#5125; </button>
+    <div class="lampe">
+      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
+        class="frageElement lampeImg esc-img" src="assets/images/lampe.png">
+      </button>
+    </div>
+    <button routerLink="/rechts">&#5125;</button>
+  </div>
+  <div class="großesRegal">
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
+      class="frageElement großesRegalImg esc-img" src="assets/images/großesRegal.png">
+    </button>
+  </div>
+  <div class="monstera">
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#monsteraModal">
+      <img class="monsteraImg esc-img" src="assets/images/monstera.png">
+    </button>
+  </div>
+  <div class="schreibtisch">
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#schreibtischModal"><img
+      class="schreibtischImg esc-img" src="assets/images/schreibtisch.png"></button>
+
+  </div>
+  <div class="kleinesRegal">
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#kleinesRegalModal"><img
+      class="kleinesRegalImg esc-img" src="assets/images/kleinesRegal.png"></button>
+
+    <div class="blauerWecker">
+      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#blauerWeckerModal"><img
+        class="frageElement esc-img" src="assets/images/uhr.png"></button>
+    </div>
   </div>
 </div>
+
+
+<!-- Modals --->
+
+<div class="modal fade" id="lampenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage1">Frage 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hier könnte Ihre Frage stehen ;)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="großesRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage2">Frage 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hier könnte Ihre Frage stehen ;)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="monsteraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage3">Frage 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hier könnte Ihre Frage stehen ;)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="schreibtischModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage4">Frage 4</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hier könnte Ihre Frage stehen ;)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kleinesRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage5">Frage 5</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hier könnte Ihre Frage stehen ;)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="blauerWeckerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage6">Frage 6</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hier könnte Ihre Frage stehen ;)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

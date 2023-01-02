@@ -1,9 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap";
 
+/* Allgemeines */
+.esc-img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
+
+/* mittlerer Raum */
 .er-mitte {
   background-size: cover;
-  background: url("src/img/raum_mitte.svg") no-repeat fixed 50% 50%;
+  background: url("assets/images/raum.png") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.mobiliar{
+  height: 100%;
+  width: 100%;
+  left: 50%;
+}
+
+.lampe {
+  height: 30%;
+  width: 10%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.schreibtisch {
+  height: 45%;
+  width: 25%;
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+
+.monstera {
+  height: 35%;
+  width: 14%;
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.großesRegal {
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+
+.kleinesRegal {
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+
+.blauerWecker{
+  height: 16.5%;
+  width: 12.5%;
+  position: absolute;
+  top: 8%;
+  left: 132%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mobiliar-btn {
+  background-color: Transparent;
+  border: none;
+
+}
+
+@keyframes glowing {
+  0% { background-color: transparent; box-shadow: 0 1px 5px #eeeeee; }
+  50% { background-color: transparent; box-shadow: 0 0 20px #7ed06e; }
+  100% { background-color: transparent; box-shadow: 0 0 5px #eeeeee; }
+}
+
+.frageElement:hover{
+  animation: glowing 13000ms infinite;
+}
+
+
+
+/* Rechter Raum */
+.er-rechts {
+  background-size: cover;
+  background: url("assets/images/raum.png") no-repeat fixed 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,28 +113,62 @@
   height: 100vh;
 }
 
-.er-rechts{
-  background-size: cover;
-  background: url("src/img/raum-rechts.svg") no-repeat fixed 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-}
-
-.escape-nav-btn{
+.escape-nav-btn {
   display: flex;
   justify-content: space-between;
   padding: 1%;
 }
 
-.escape-nav-btn-l{
+.escape-nav-btn-l {
   display: flex;
   justify-content: flex-end;
   padding: 1%;
 }
 
-app-escaperoom{
+.fenster {
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.pyramidenRegal {
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.kommode {
+  height: 25%;
+  width: 20%;
+  position: absolute;
+  top: 83%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.druckerRegal {
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+/*Linker Raum */
+
+.er-links {
+  background-size: cover;
+  background: url("assets/images/raum.png") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh;
 }
+

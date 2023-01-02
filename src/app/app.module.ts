@@ -11,6 +11,7 @@ import { SpielregelnComponent } from './spielregeln/spielregeln.component';
 import { ErklaerungComponent } from './erklaerung/erklaerung.component';
 import { ErRechtsComponent } from './er-rechts/er-rechts.component';
 import { ErLinksComponent } from './er-links/er-links.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes=[
   {path: 'start', component: OnepagerComponent},
@@ -36,7 +37,8 @@ const appRoutes: Routes=[
     RouterModule.forRoot(
       appRoutes,
       {enableTracing:true}
-    )
+    ),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
