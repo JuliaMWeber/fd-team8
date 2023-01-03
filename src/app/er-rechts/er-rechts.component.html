@@ -3,8 +3,20 @@
     <button routerLink="/escape">&#5130;</button>
   </div>
   <div class="fenster">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
-      class="frageElement großesRegalImg esc-img" src="assets/images/fenster.png">
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal">
+      <div id="fensterMitEnte">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte1.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte2.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte3.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte4.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte5.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte6.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte5.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte4.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte3.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte2.png">
+        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte1.png">
+      </div>
     </button>
   </div>
   <div class="lampe">
@@ -15,17 +27,50 @@
 
   <div class="pyramidenRegal">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
-      class="frageElement großesRegalImg esc-img" src="assets/images/pyramidenregal.png">
+      class="frageElement esc-img" src="assets/images/pyramidenregal.png">
     </button>
   </div>
   <div class="kommode">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
-      class="frageElement großesRegalImg esc-img" src="assets/images/kommode.png">
+      class="frageElement esc-img" src="assets/images/kommode.png">
     </button>
   </div>
   <div class="druckerRegal">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
-      class="frageElement großesRegalImg esc-img" src="assets/images/druckerRegal.png">
+      class="frageElement esc-img" src="assets/images/druckerRegal.png">
     </button>
+    <div class="drucker">
+      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal">
+        <img class="frageElement esc-img druckerUnhover" src="assets/images/druckerUnhover.png">
+        <img class="frageElement esc-img druckerHover" src="assets/images/druckerHovered.png">
+      </button>
+    </div>
   </div>
 </div>
+
+<script>
+  const fps = 6,
+    fensterMitEnte = document.getElementById('fensterMitEnte');
+  // Gibt an, ob die Animation läuft:
+  let enteRunning = false;
+  function animateIt() {
+    // Wir nehmen das letzte Bild und stellen es an den Anfang:
+    fensterMitEnte.prepend(fensterMitEnte.lastElementChild);
+    // Erneuten Aufruf der Funktion anfordern
+    // wenn die Animation laufen soll:
+    if (enteRunning) {
+      requestAnimationFrame(animateIt);
+    }
+  }
+  // Animation starten und stoppen mit Eventhandler
+  // fuer Mouseover und Mouseout:
+  fensterMitEnte.addEventListener('mouseover', event => {
+    // Animation starten.
+    enteRunning = true;
+    animateIt();
+  });
+  fensterMitEnte.addEventListener('mouseout', event => {
+    // Animation anhalten:
+    enteRunning = false;
+  });
+</script>

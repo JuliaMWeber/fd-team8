@@ -1,8 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap";
 
+/*Animationen*/
+@keyframes glowing {
+  0% {
+    background-color: transparent;
+    box-shadow: 0 1px 5px #eeeeee;
+  }
+  50% {
+    background-color: transparent;
+    box-shadow: 0 0 20px #7ed06e;
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 5px #eeeeee;
+  }
+}
+
+@keyframes fensterMitEnte {
+  0% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte1.png");
+  }
+  16% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte2.png");
+  }
+  32% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte3.png");
+  }
+  48% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte4.png");
+  }
+  64% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte5.png");
+  }
+  80% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte6.png");
+  }
+  100% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte6.png");
+  }
+  80% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte5.png");
+  }
+  64% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte4.png");
+  }
+  48% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte3.png");
+  }
+  32% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte2.png");
+  }
+  16% {
+    background-image: url("assets/images/entenAnimation/fensterMitEnte1.png");
+  }
+
+}
+
+.frageElement:hover {
+  animation: glowing 13000ms infinite;
+}
+
 /* Allgemeines */
-.esc-img{
+.esc-img {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -20,7 +80,8 @@
   background-size: cover;
   height: 100vh;
 }
-.mobiliar{
+
+.mobiliar {
   height: 100%;
   width: 100%;
   left: 50%;
@@ -30,8 +91,8 @@
   height: 30%;
   width: 10%;
   position: absolute;
-  left: 50%;
-  top: 10%;
+  left: 47%;
+  top: 20%;
   transform: translate(-50%, -50%);
 }
 
@@ -43,7 +104,6 @@
   left: 40%;
   transform: translate(-50%, -50%);
 }
-
 
 .monstera {
   height: 35%;
@@ -73,8 +133,7 @@
   transform: translate(-50%, -50%);
 }
 
-
-.blauerWecker{
+.blauerWecker {
   height: 16.5%;
   width: 12.5%;
   position: absolute;
@@ -83,23 +142,11 @@
   transform: translate(-50%, -50%);
 }
 
-
 .mobiliar-btn {
   background-color: Transparent;
   border: none;
 
 }
-
-@keyframes glowing {
-  0% { background-color: transparent; box-shadow: 0 1px 5px #eeeeee; }
-  50% { background-color: transparent; box-shadow: 0 0 20px #7ed06e; }
-  100% { background-color: transparent; box-shadow: 0 0 5px #eeeeee; }
-}
-
-.frageElement:hover{
-  animation: glowing 13000ms infinite;
-}
-
 
 
 /* Rechter Raum */
@@ -135,11 +182,11 @@
 }
 
 .pyramidenRegal {
-  height: 40%;
-  width: 20%;
+  height: 50%;
+  width: 25%;
   position: absolute;
-  top: 45%;
-  left: 65%;
+  top: 80.5%;
+  left: 67.5%;
   transform: translate(-50%, -50%);
 }
 
@@ -153,13 +200,43 @@
 }
 
 .druckerRegal {
-  height: 40%;
-  width: 20%;
+  height: 15%;
+  width: 30%;
   position: absolute;
-  top: 45%;
-  left: 65%;
+  top: 40%;
+  left: 9%;
   transform: translate(-50%, -50%);
 }
+
+.drucker {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 39%;
+  left: 115%;
+  transform: translate(-50%, -50%);
+}
+
+.druckerHover {
+  height: 110%;
+  top: 40%
+}
+
+.drucker .druckerHover {
+  display: none;
+  position: absolute;
+  transition: opacity .6s;
+}
+
+.drucker:hover .druckerHover {
+  display: inline;
+  transition: opacity .6s;
+}
+
+.drucker:hover .druckerUnhover {
+  display: none;
+}
+
 /*Linker Raum */
 
 .er-links {
