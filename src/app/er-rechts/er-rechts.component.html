@@ -4,19 +4,8 @@
   </div>
   <div class="fenster">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal">
-      <div id="fensterMitEnte">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte1.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte2.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte3.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte4.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte5.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte6.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte5.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte4.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte3.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte2.png">
-        <img class="frageElement esc-img" src="assets/images/entenAnimation/fensterMitEnte1.png">
-      </div>
+      <img class="frageElement esc-img fensterUnhover" src="assets/images/entenAnimation/fensterMitEnte1.png">
+      <img class="frageElement esc-img fensterHover" src="assets/images/entenAnimation/fensterMitEnte6.png">
     </button>
   </div>
   <div class="lampe">
@@ -48,29 +37,3 @@
   </div>
 </div>
 
-<script>
-  const fps = 6,
-    fensterMitEnte = document.getElementById('fensterMitEnte');
-  // Gibt an, ob die Animation läuft:
-  let enteRunning = false;
-  function animateIt() {
-    // Wir nehmen das letzte Bild und stellen es an den Anfang:
-    fensterMitEnte.prepend(fensterMitEnte.lastElementChild);
-    // Erneuten Aufruf der Funktion anfordern
-    // wenn die Animation laufen soll:
-    if (enteRunning) {
-      requestAnimationFrame(animateIt);
-    }
-  }
-  // Animation starten und stoppen mit Eventhandler
-  // fuer Mouseover und Mouseout:
-  fensterMitEnte.addEventListener('mouseover', event => {
-    // Animation starten.
-    enteRunning = true;
-    animateIt();
-  });
-  fensterMitEnte.addEventListener('mouseout', event => {
-    // Animation anhalten:
-    enteRunning = false;
-  });
-</script>

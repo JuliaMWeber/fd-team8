@@ -175,10 +175,30 @@
 .fenster {
   height: 40%;
   width: 20%;
-  position: absolute;
-  top: 45%;
+  position: fixed;
+  top: 41%;
   left: 40%;
   transform: translate(-50%, -50%);
+}
+
+.fensterHover {
+  height: 100%;
+  top: 18.5px
+}
+
+.fenster .fensterHover {
+  display: none;
+  position: absolute;
+  transition: opacity .6s;
+}
+
+.fenster:hover .fensterHover {
+  display: inline;
+  transition: opacity .6s;
+}
+
+.fenster:hover .fensterUnhover {
+  display: none;
 }
 
 .pyramidenRegal {
@@ -218,8 +238,8 @@
 }
 
 .druckerHover {
-  height: 110%;
-  top: 40%
+  height: 120%;
+  top: 39%
 }
 
 .drucker .druckerHover {
@@ -248,4 +268,52 @@
   background-size: cover;
   height: 100vh;
 }
+
+.bett {
+  height: 20%;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: scaleX(-1);
+}
+
+.schrank {
+  height: 40%;
+  width: 15%;
+  position: absolute;
+  left: 71%;
+  top: 60.5%;
+}
+
+.nachttisch {
+  height: 20%;
+  width: 7%;
+  position: absolute;
+  left: 23%;
+  top: 70.5%;
+}
+
+.rahmen1 {
+  height: 20%;
+  width: 7%;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}
+.rahmen2 {
+  height: 20%;
+  width: 7%;
+  position: absolute;
+  left: 42.5%;
+  top: 35%;
+}
+.rahmen3 {
+  height: 20%;
+  width: 7%;
+  position: absolute;
+  left: 55%;
+  top: 35%;
+}
+
 
