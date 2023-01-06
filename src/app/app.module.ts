@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes} from "@angular/router";
 
+//neu
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
+
 import { AppComponent } from './app.component';
 import { OnepagerComponent } from './onepager/onepager.component';
 import { EscaperoomComponent } from './escaperoom/escaperoom.component';
@@ -30,10 +33,11 @@ const appRoutes: Routes=[
     SpielregelnComponent,
     ErklaerungComponent,
     ErRechtsComponent,
-    ErLinksComponent
+    ErLinksComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes,
       {enableTracing:true}
