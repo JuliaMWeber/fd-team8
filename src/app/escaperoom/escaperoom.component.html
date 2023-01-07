@@ -1,4 +1,4 @@
-<div class="er-mitte fullHeight">
+<div class="raum fullHeight">
   <div class="escape-nav-btn fullHeight">
     <button routerLink="/links">&#5130;</button>
     <div class="lampe">
@@ -6,30 +6,31 @@
         class="frageElement esc-img" src="assets/images/lampe.png">
       </button>
     </div>
+    <div class="counter">0%</div>
     <button routerLink="/rechts">&#5125;</button>
   </div>
   <div class="großesRegal">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
-      class="frageElement esc-img" src="assets/images/großesRegal.png">
+      class="frageElement esc-img" src="../../assets/images/er-mitte/großesRegal.png">
     </button>
   </div>
   <div class="monstera">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#monsteraModal">
-      <img class="esc-img" src="assets/images/monstera.png">
+      <img class="esc-img" src="../../assets/images/er-mitte/monstera.png">
     </button>
   </div>
   <div class="schreibtisch">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#schreibtischModal"><img
-      class="esc-img" src="assets/images/schreibtisch.png"></button>
+      class="esc-img" src="../../assets/images/er-mitte/schreibtisch.png"></button>
 
   </div>
   <div class="kleinesRegal">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#kleinesRegalModal"><img
-      class="esc-img" src="assets/images/kleinesRegal.png"></button>
+      class="esc-img" src="../../assets/images/er-mitte/kleinesRegal.png"></button>
 
     <div class="blauerWecker">
       <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#blauerWeckerModal"><img
-        class="esc-img" src="assets/images/uhr.png"></button>
+        class="esc-img" src="../../assets/images/er-mitte/uhr.png"></button>
     </div>
   </div>
 </div>
@@ -148,22 +149,26 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Frage6">Frage 6</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>          <span aria-hidden="true">&times;</span>
+        </div>
       <div class="modal-body">
-        Hier könnte Ihre Frage stehen ;)
+       <form>
+         <h2> Welches der folgenden HTLM-Tags wird für einen Textabsatz genutzt?</h2>
+         <input type="radio" id="p" name="tagFrage" value="p">
+         <label for="p">p</label><br>
+         <input type="radio" id="div" name="tagFrage" value="div">
+         <label for="div">div</label><br>
+         <input type="radio" id="img" name="tagFrage" value="img">
+         <label for="img">img</label>
+       </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
       </div>
     </div>
   </div>
 </div>
-
-
 
 
 

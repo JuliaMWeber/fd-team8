@@ -1,0 +1,60 @@
+@import "../../main.css";
+@import "bootstrap";
+
+
+.mobiliar {
+  height: 100%;
+  width: 100%;
+  left: 50%;
+}
+
+.schreibtisch {
+  height: 45%;
+  width: 25%;
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.monstera {
+  height: 35%;
+  width: 14%;
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.großesRegal {
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+
+.kleinesRegal {
+  height: 40%;
+  width: 20%;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.blauerWecker {
+  height: 16.5%;
+  width: 12.5%;
+  position: absolute;
+  top: 0%;
+  left: 125%;
+}
+
+.blauerWecker:hover{
+  animation: vibration 2s ease 0s infinite normal forwards;
+}
+
+

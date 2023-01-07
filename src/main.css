@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap";
+
+/*Animationen*/
+@keyframes glowing {
+  0% {
+    background-color: transparent;
+    box-shadow: 0 1px 5px #eeeeee;
+  }
+  50% {
+    background-color: transparent;
+    box-shadow: 0 0 20px #7ed06e;
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 5px #eeeeee;
+  }
+}
+
+@keyframes vibration {
+  0% {
+    transform: translate(0);
+  }
+
+  10% {
+    transform: translate(-2px, -2px);
+  }
+
+  20% {
+    transform: translate(2px, -2px);
+  }
+
+  30% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, 2px);
+  }
+
+  50% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, -2px);
+  }
+
+  70% {
+    transform: translate(-2px, 2px);
+  }
+
+  80% {
+    transform: translate(-2px, -2px);
+  }
+
+  90% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.frageElement:hover {
+  animation: glowing 13000ms infinite;
+}
+
+/* Allgemeines für Escape-Room*/
+.lampe {
+  height: 30%;
+  width: 10%;
+  position: absolute;
+  left: 47%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.mobiliar-btn {
+  background-color: Transparent;
+  border: none;
+
+}
+
+.esc-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
+.raum {
+  background-size: cover;
+  background: url("src/assets/images/raum.png") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.escape-nav-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.escape-nav-btn-l {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
+.counter{
+}
+
+
+
