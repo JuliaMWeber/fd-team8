@@ -44,16 +44,26 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Frage1">Frage 1</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Hier könnte Ihre Frage stehen ;)
+        <form>
+          <h5> Für was wird JavaScript verwendet? <br>
+          (Mehrfachnennung ist möglich)
+          </h5>
+          <input type="checkbox" class="wahr" name="strukturFrage" value="">
+          <label for="p">Reaktion auf Nutzerinteraktion</label><br>
+          <input type="checkbox" class="falsch" name="strukturFrage" value="div">
+          <label for="div">Formularüberprüfung</label><br>
+          <input type="checkbox" class="wahr" name="strukturFrage" value="">
+          <label for="p">Nachladen von Daten</label><br>
+          <input type="checkbox" class="falsch" name="strukturFrage" value="div">
+          <label for="div">Kommunikation mit der Datenbank</label><br>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
       </div>
     </div>
   </div>
@@ -65,16 +75,18 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Frage2">Frage 2</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Hier könnte Ihre Frage stehen ;)
+        <h5>Wie nennt man diesen Selektor? -> * </h5>
+        <input type="radio" class="wahr" name="strukturFrage" value="p">
+        <label for="p">Universalselektor</label><br>
+        <input type="radio" class="falsch" name="strukturFrage" value="div">
+        <label for="div">Gleichstellungsselektor</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
       </div>
     </div>
   </div>
@@ -86,16 +98,18 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Frage3">Frage 3</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Hier könnte Ihre Frage stehen ;)
+        <h5> Wie viele Abstufungen von Überschriften gibt es? </h5>
+        <input type="radio" class="wahr" name="strukturFrage" value="p">
+        <label for="p">3</label><br>
+        <input type="radio" class="falsch" name="strukturFrage" value="div">
+        <label for="div">9</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
       </div>
     </div>
   </div>
@@ -107,16 +121,20 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Frage4">Frage 4</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Hier könnte Ihre Frage stehen ;)
+        <form>
+          <h2> Für die Strukturierung des Inhalts verwendet man CSS? </h2>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label for="p">Wahr</label><br>
+          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <label for="div">Falsch</label><br>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
       </div>
     </div>
   </div>
@@ -128,16 +146,20 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Frage5">Frage 5</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Hier könnte Ihre Frage stehen ;)
+        <form>
+          <h2> Für die Strukturierung des Inhalts verwendet man HTML? </h2>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label for="p">Wahr</label><br>
+          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <label for="div">Falsch</label><br>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
       </div>
     </div>
   </div>
@@ -149,18 +171,18 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Frage6">Frage 6</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>          <span aria-hidden="true">&times;</span>
-        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
       <div class="modal-body">
-       <form>
-         <h2> Welches der folgenden HTLM-Tags wird für einen Textabsatz genutzt?</h2>
-         <input type="radio" id="p" name="tagFrage" value="p">
-         <label for="p">p</label><br>
-         <input type="radio" id="div" name="tagFrage" value="div">
-         <label for="div">div</label><br>
-         <input type="radio" id="img" name="tagFrage" value="img">
-         <label for="img">img</label>
-       </form>
+        <form>
+          <h2> Welches der folgenden HTLM-Tags wird für einen Textabsatz genutzt?</h2>
+          <input type="radio" id="p" name="tagFrage" value="p">
+          <label for="p">p</label><br>
+          <input type="radio" id="div" name="tagFrage" value="div">
+          <label for="div">div</label><br>
+          <input type="radio" id="img" name="tagFrage" value="img">
+          <label for="img">img</label>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
