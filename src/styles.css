@@ -6,7 +6,7 @@
 h1{
   color: #9C132E;
 }
-
+/*
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -66,8 +66,46 @@ h2 {
 .vorteil {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; 
 }
+*/
+
+* {
+  box-sizing: border-box;
+}
+.body {
+  margin: 0;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other 
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+*/
+
+
+/*
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.erklaerungHTML {
+  content: "";
+  clear: both;
+  display: table;
+}*/
 
 
 .galleryCss {
@@ -118,12 +156,12 @@ h2 {
 	}
 }
 
-.galleryJs figure:nth-of-type(2) {
+.galleryCss figure:nth-of-type(2) {
 	animation-delay: 5s;
 	opacity: 0;
 }
 
-.galleryJs figure:nth-of-type(3) {
+.galleryCss figure:nth-of-type(3) {
 	animation-delay: 10s;
 	opacity: 0;
 }
@@ -189,11 +227,14 @@ h2 {
 
 
 
-#buttonEscape {
+.buttonEscape {
   color: #9C132E;
   text-align: center;
 }
-
+.fa-solid fa-person-to-door{
+  font-size: 60px;
+  color:blue;
+}
 
 
 
