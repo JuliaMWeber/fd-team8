@@ -4,9 +4,14 @@
 /*One Pager*/
 
 
-
-h1{
+h1 {
   color: #9C132E;
+}
+h2 {
+	color: #9C132E;
+}
+h6 {
+	color: #c3db9c !important;
 }
 
 /* andere Hintergrundfarbe 
@@ -14,7 +19,10 @@ body{
   background-color: #7ed06e !important;
 }
 */
-
+.p-5 {
+	color: #c3db9c !important;
+}
+  
 
 .erklärung-container, .spielregeln-container, .vorstellung-container {
   max-width: 800px;
