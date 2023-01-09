@@ -7,6 +7,14 @@ h1{
   color: #9C132E;
 }
 
+.erklärung-container, .spielregeln-container, .vorstellung-container {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
 .galleryHtml {
 	position: relative;
 	margin: 0;
@@ -59,12 +67,12 @@ h1{
 	animation-delay: 5s;
 	opacity: 0;
 }
-
+/*
 .galleryHtml figure:nth-of-type(3) {
 	animation-delay: 10s;
 	opacity: 0;
 }
-
+*/
 
 
 
@@ -120,12 +128,12 @@ h1{
 	animation-delay: 5s;
 	opacity: 0;
 }
-
+/*
 .galleryCss figure:nth-of-type(3) {
 	animation-delay: 10s;
 	opacity: 0;
 }
-
+*/
 .galleryJs {
 	position: relative;
 	margin: 0;
@@ -309,6 +317,10 @@ h1{
   padding: 1%;
 }
 
+/*
+
+/* One pager?*/
+/*
 .navbar, .p-5,.item, .spielregeln-container{
   max-width: 800px;
   text-align: center;
@@ -321,5 +333,9 @@ h1{
   float: left;
 }
 .kapitel-titel-container,.text-right{
-float: left;
+  float: left;
 }
+*/
+
+
+
