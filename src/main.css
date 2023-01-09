@@ -112,8 +112,17 @@
   padding: 1%;
 }
 
-.counter{
+.navbar, .p-5,.item, .spielregeln-container{
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-
-
+.vorstellungImg, .regelImg{
+  max-width: 10%;
+  max-height: 10%;
+  float: left;
+}
+.kapitel-titel-container,.text-right{
+float: left;
+}
