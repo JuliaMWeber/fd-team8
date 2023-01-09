@@ -112,26 +112,6 @@
   padding: 1%;
 }
 
-.vorstellungImg, .regelImg{
-  max-width: 10%;
-  max-height: 10%;
-  float: left;
-}
-.p-5 {
-  background-color: #7ed06e;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-}
-
-.h-img{
-  max-width: 40%;
-  max-height: 40%;
-  float: right;
-}
-.kapitel-titel-container,.text-right{
-float: left;
-}
-
 .navbar {
   max-width: 800px;
   text-align: center;
@@ -140,13 +120,56 @@ float: left;
 .firstBody {
   box-sizing: border-box;
   max-width: 800px;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  background-image: url("assets/images/er-mitte/kleinesRegal.png");
+}
+.oneBg{
+  background-position-y: top;
+  background-image: url("assets/images/spielRegel.jpg"); 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 65%;
+  background-attachment: fixed;
 }
 
+.p-5 {
+  background-color: beige;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.mb-3 {
+ margin-top: 50px;
+ text-align: center;
+}
+.text-right{
+  margin: 10px;
+  padding: 10px;
+  background-color: beige;
+}
+.h-img{
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 50px;
+  margin-left: 25%;
+
+}
+.spielstory {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+  
+}
+.regelImg, .vorstellungImg{
+  max-width: 100%;
+  max-height: auto;
+}
 
 
