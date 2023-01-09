@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes} from "@angular/router";
 
 //neu
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { OnepagerComponent } from './onepager/onepager.component';
@@ -14,6 +14,7 @@ import { SpielregelnComponent } from './spielregeln/spielregeln.component';
 import { ErklaerungComponent } from './erklaerung/erklaerung.component';
 import { ErRechtsComponent } from './er-rechts/er-rechts.component';
 import { ErLinksComponent } from './er-links/er-links.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes=[
   {path: 'start', component: OnepagerComponent},
@@ -32,7 +33,7 @@ const appRoutes: Routes=[
     SpielregelnComponent,
     ErklaerungComponent,
     ErRechtsComponent,
-    ErLinksComponent,
+    ErLinksComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,8 @@ const appRoutes: Routes=[
     RouterModule.forRoot(
       appRoutes,
       {enableTracing:true}
-    )
+    ),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

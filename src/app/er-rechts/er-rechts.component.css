@@ -1,0 +1,89 @@
+@import "../../main.css";
+@import "bootstrap";
+
+
+
+.fenster {
+  height: 40%;
+  width: 20%;
+  position: fixed;
+  top: 41%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.fensterHover {
+  height: 100%;
+  top: 18.5px
+}
+
+.fenster .fensterHover {
+  display: none;
+  position: absolute;
+  transition: opacity .6s;
+}
+
+.fenster:hover .fensterHover {
+  display: inline;
+  transition: opacity .6s;
+}
+
+.fenster:hover .fensterUnhover {
+  display: none;
+}
+
+.pyramidenRegal {
+  height: 50%;
+  width: 25%;
+  position: absolute;
+  top: 80.5%;
+  left: 67.5%;
+  transform: translate(-50%, -50%);
+}
+
+.kommode {
+  height: 25%;
+  width: 20%;
+  position: absolute;
+  top: 83%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.druckerRegal {
+  height: 15%;
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+}
+
+.drucker {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 39%;
+  left: 115%;
+  transform: translate(-50%, -50%);
+}
+
+.druckerHover {
+  height: 120%;
+  top: 39%
+}
+
+.drucker .druckerHover {
+  display: none;
+  position: absolute;
+  transition: opacity .6s;
+}
+
+.drucker:hover .druckerHover {
+  display: inline;
+  transition: opacity .6s;
+}
+
+.drucker:hover .druckerUnhover {
+  display: none;
+}

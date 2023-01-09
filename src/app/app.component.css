@@ -6,25 +6,4 @@ h1 {
   text-align: center;
 }
 
-.schreibtisch {
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-.er-mitte {
-  background-size: cover;
-  background: url("src/img/raum.svg") no-repeat fixed 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.fullHeight{
-  height: 100vh
-}
-
 
