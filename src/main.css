@@ -117,6 +117,7 @@
   text-align: center;
   margin: 0 auto;
 }
+
 .firstBody {
   box-sizing: border-box;
   max-width: 800px;
@@ -125,10 +126,10 @@
 }
 .oneBg{
   background-position-y: top;
-  background-image: url("assets/images/spielRegel.jpg"); 
+  background-image: url("assets/images/er-rechts/pyramidenregal.png"); 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 65%;
+  background-size: 55%;
   background-attachment: fixed;
 }
 
@@ -171,5 +172,4 @@
   max-width: 100%;
   max-height: auto;
 }
-
 
