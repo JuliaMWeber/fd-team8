@@ -133,7 +133,6 @@ float: left;
 }
 
 .navbar {
-  box-sizing: border-box;
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
@@ -143,8 +142,7 @@ float: left;
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
-  background-image: url("assets/images/spielRegel.jpg");
-  
+  background-image: url("assets/images/er-mitte/kleinesRegal.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
