@@ -50,4 +50,14 @@
   top: 35%;
 }
 
+.rahmenRot{
+  background-color: cyan;
+}
+.rahmenGruen{
+  background-color: magenta;
+}
+.rahmenBlau{
+  background-color: yellow;
+}
+
 
