@@ -50,13 +50,15 @@
   top: 35%;
 }
 
-.rahmenRot{
+.rahmenRot {
   background-color: cyan;
 }
-.rahmenGruen{
+
+.rahmenGruen {
   background-color: magenta;
 }
-.rahmenBlau{
+
+.rahmenBlau {
   background-color: yellow;
 }
 
