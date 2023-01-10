@@ -33,9 +33,10 @@
 }
 
 .pyramidenRegal {
+  display: inline;
   height: 50%;
   width: 25%;
-  position: absolute;
+  position: fixed;
   top: 80.5%;
   left: 67.5%;
   transform: translate(-50%, -50%);
@@ -44,7 +45,7 @@
 .kommode {
   height: 25%;
   width: 20%;
-  position: absolute;
+  position: fixed;
   top: 83%;
   left: 40%;
   transform: translate(-50%, -50%);

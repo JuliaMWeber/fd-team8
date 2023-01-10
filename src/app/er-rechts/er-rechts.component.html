@@ -3,7 +3,7 @@
     <button routerLink="/escape">&#5130;</button>
   </div>
   <div class="fenster">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal">
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#fensterModal">
       <img class="frageElement esc-img fensterUnhover" src="../../assets/images/er-rechts/fensterMitEnte1.png">
       <img class="frageElement esc-img fensterHover" src="../../assets/images/er-rechts/fensterMitEnte6.png">
     </button>
@@ -15,21 +15,21 @@
   </div>
 
   <div class="pyramidenRegal">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#pyramidenRegalModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/pyramidenregal.png">
     </button>
   </div>
   <div class="kommode">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#kommodenModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/kommode.png">
     </button>
   </div>
   <div class="druckerRegal">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
+    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#druckerRegalModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/druckerRegal.png">
     </button>
     <div class="drucker">
-      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal">
+      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#druckerModal">
         <img class="frageElement esc-img druckerUnhover" src="../../assets/images/er-rechts/druckerUnhover.png">
         <img class="frageElement esc-img druckerHover" src="../../assets/images/er-rechts/druckerHovered.png">
       </button>
@@ -37,3 +37,156 @@
   </div>
 </div>
 
+<div class="modal fade" id="lampenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage1">Frage 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h2> Code wird von oben nach unten interpretiert? </h2>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label>Wahr</label><br>
+          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <label>Falsch</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fensterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage2">Frage 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Wie nennt man diesen Selektor? -> * </h5>
+        <input type="radio" class="wahr" name="strukturFrage" value="p">
+        <label>Universalselektor</label><br>
+        <input type="radio" class="falsch" name="strukturFrage" value="div">
+        <label>Gleichstellungsselektor</label><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="pyramidenRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage3">Frage 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5> Wie viele Abstufungen von Überschriften gibt es? </h5>
+        <input type="radio" class="wahr" name="strukturFrage" value="p">
+        <label>3</label><br>
+        <input type="radio" class="falsch" name="strukturFrage" value="div">
+        <label>9</label><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kommodenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage4">Frage 4</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> Welche Maße hat eine Box mit folgenden Angaben? <br> width 300px <br>
+            width 200px<br>
+            margin 20px35px<br>
+            padding 5px15px20px<br>
+          </h5>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label>Breite 410 x Höhe 275</label><br>
+          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <label>Breite 275 x Höhe 410</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="druckerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage5">Frage 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> Wofür stehen die Angaben RGB? </h5>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label>Richtig Geil Bosshaft</label><br>
+          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <label>Rot Grün Blau</label><br>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label>Randerscheinung Gleicht Bauhaft</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="druckerRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage5">Frage 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> Wofür stehen die Angaben RGB? </h5>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label>Richtig Geil Bosshaft</label><br>
+          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <label>Rot Grün Blau</label><br>
+          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <label>Randerscheinung Gleicht Bauhaft</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
+        <input type="submit" class="btn btn-primary" value="Speichern">
+      </div>
+    </div>
+  </div>
+</div>

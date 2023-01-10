@@ -11,7 +11,7 @@
 .schreibtisch {
   height: 45%;
   width: 25%;
-  position: absolute;
+  position: fixed;
   top: 85%;
   left: 40%;
   transform: translate(-50%, -50%);
@@ -20,7 +20,7 @@
 .monstera {
   height: 35%;
   width: 14%;
-  position: absolute;
+  position: fixed;
   top: 85%;
   left: 15%;
   transform: translate(-50%, -50%);

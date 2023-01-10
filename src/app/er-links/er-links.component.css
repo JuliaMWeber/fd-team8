@@ -13,7 +13,7 @@
 .schrank {
   height: 40%;
   width: 15%;
-  position: absolute;
+  position: fixed;
   left: 71%;
   top: 60.5%;
 }
