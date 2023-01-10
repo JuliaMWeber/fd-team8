@@ -126,7 +126,7 @@
 }
 .oneBg{
   background-position-y: top;
-  background-image: url("assets/images/er-rechts/pyramidenregal.png"); 
+  background-image: url("assets/images/er-rechts/pyramidenregal.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 55%;
@@ -166,7 +166,7 @@
   max-width: 800px;
   margin: 0 auto;
   font: 500 100%/1.5 system-ui;
-  
+
 }
 .regelImg, .vorstellungImg{
   max-width: 100%;
