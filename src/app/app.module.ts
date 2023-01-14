@@ -15,6 +15,7 @@ import { ErklaerungComponent } from './erklaerung/erklaerung.component';
 import { ErRechtsComponent } from './er-rechts/er-rechts.component';
 import { ErLinksComponent } from './er-links/er-links.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { QuellenComponent } from './quellen/quellen.component';
 
 const appRoutes: Routes=[
   {path: 'start', component: OnepagerComponent},
@@ -33,7 +34,8 @@ const appRoutes: Routes=[
     SpielregelnComponent,
     ErklaerungComponent,
     ErRechtsComponent,
-    ErLinksComponent
+    ErLinksComponent,
+    QuellenComponent
   ],
   imports: [
     BrowserModule,

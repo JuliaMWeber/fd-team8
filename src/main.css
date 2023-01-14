@@ -63,6 +63,16 @@
   }
 }
 
+@keyframes lampenschein {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes mausbewegung {
+  0% {transform: translateX(-7px)}
+  25% {transform: translateY(-50px)}
+}
+
 .frageElement:hover {
   animation: glowing 13000ms infinite;
 }
@@ -75,6 +85,17 @@
   left: 47%;
   top: 20%;
   transform: translate(-50%, -50%);
+}
+
+.lampenschein{
+  height: 30%;
+  width: 15%;
+  position: absolute;
+  left: 44.5%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  animation: lampenschein 13000ms infinite;
+  animation-direction: alternate;
 }
 
 .mobiliar-btn {
