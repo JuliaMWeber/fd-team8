@@ -7,11 +7,9 @@
       </button>
     </div>
     <div class="lampenschein">
-      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
-        class="frageElement esc-img" src="assets/images/Lampenschein.png">
-      </button>
+      <img class="frageElement esc-img" src="assets/images/Lampenschein.png">
     </div>
-    <div class="counter">0%</div>
+    <div class="counter"><div class="counterValue">50</div></div>
     <button routerLink="/rechts">&#5125;</button>
   </div>
   <div class="großesRegal">
@@ -29,7 +27,7 @@
       class="esc-img" src="../../assets/images/er-mitte/schreibtisch.png"></button>
   </div>
   <div class="mauszeiger">
-   <img class="esc-img" src="../../assets/images/er-mitte/mauszeiger.png">
+    <img class="esc-img" src="../../assets/images/er-mitte/mauszeiger.png">
   </div>
   <div class="kleinesRegal">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#kleinesRegalModal"><img
@@ -56,7 +54,7 @@
       <div class="modal-body">
         <form>
           <h5> Für was wird JavaScript verwendet? <br>
-          (Mehrfachnennung ist möglich)
+            (Mehrfachnennung ist möglich)
           </h5>
           <input type="checkbox" class="wahr" name="strukturFrage" value="">
           <label for="p">Reaktion auf Nutzerinteraktion</label><br>
@@ -199,7 +197,21 @@
   </div>
 </div>
 
+<script>
+  var counterValue = document.getElementsByClassName('counterValue')[0].firstChild.innerHTML;
+  var zahl=parseInt(counterValue);
 
+  if(zahl<=25){
+    document.getElementsByClassName(counter).backgroundColor = "#ff0000";
+  } else if (counterValue<50){
+    document.getElementsByClassName(counter).backgroundColor = "#ffa500";
+
+  } else if (zahl<=75){
+    document.getElementsByClassName(counter).backgroundColor = "#ffff00";
+  } else {
+    document.getElementsByClassName(counter).backgroundColor = "#00ff00";
+  }
+</script>
 
 
 

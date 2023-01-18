@@ -69,8 +69,10 @@
 }
 
 @keyframes mausbewegung {
-  0% {transform: translateX(-7px)}
-  25% {transform: translateY(-50px)}
+  10% {transform: translateX(57%)}
+  25% {transform: translateY(50%)}
+  50% {transform: translateX(-40%)}
+  100% {transform: translateY(-100%)}
 }
 
 .frageElement:hover {
@@ -89,10 +91,10 @@
 
 .lampenschein{
   height: 30%;
-  width: 15%;
+  width: 15.5%;
   position: absolute;
-  left: 44.5%;
-  top: 47%;
+  left: 44.6%;
+  top: 49%;
   transform: translate(-50%, -50%);
   animation: lampenschein 13000ms infinite;
   animation-direction: alternate;
@@ -133,6 +135,16 @@
   padding: 1%;
 }
 
+.counter{
+  text-align: center;
+  width: 5%;
+  position: absolute;
+  left: 90%;
+  top: 90%;
+  padding: 10px;
+}
+
+/* onePager */
 .navbar {
   max-width: 800px;
   text-align: center;

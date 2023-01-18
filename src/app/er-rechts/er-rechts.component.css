@@ -14,13 +14,14 @@
 
 .fensterHover {
   height: 100%;
-  top: 18.5px
+  top: 18.5px;
+  animation: lampenschein 17ms;
 }
 
 .fenster .fensterHover {
   display: none;
   position: absolute;
-  transition: opacity .6s;
+
 }
 
 .fenster:hover .fensterHover {
@@ -40,6 +41,15 @@
   top: 80.5%;
   left: 67.5%;
   transform: translate(-50%, -50%);
+}
+
+.pyramidenWecker{
+  height: 8%;
+  width: 4%;
+  position: absolute;
+  left: 77%;
+  top: 56.1%;
+  animation: vibration 2s ease 0s infinite normal forwards;
 }
 
 .kommode {

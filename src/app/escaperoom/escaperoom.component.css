@@ -23,7 +23,7 @@
   position: absolute;
   left: 55%;
   top: 50%;
-  animation: mausbewegung 13000ms;
+  animation: mausbewegung 13000ms infinite;
   animation-direction: alternate;
 }
 
