@@ -1,27 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap";
-@import "css/animations.css";
-@import "css/escape-allg.css";
-@import "css/modals.css";
 
-/*OnePager*/
-/*
+/*Animationen*/
+@keyframes glowing {
+  0% {
+    background-color: transparent;
+    box-shadow: 0 1px 5px #eeeeee;
+  }
+  50% {
+    background-color: transparent;
+    box-shadow: 0 0 20px #7ed06e;
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 5px #eeeeee;
+  }
+}
+
+@keyframes vibration {
+  0% {
+    transform: translate(0);
+  }
+
+  10% {
+    transform: translate(-2px, -2px);
+  }
+
+  20% {
+    transform: translate(2px, -2px);
+  }
+
+  30% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, 2px);
+  }
+
+  50% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, -2px);
+  }
+
+  70% {
+    transform: translate(-2px, 2px);
+  }
+
+  80% {
+    transform: translate(-2px, -2px);
+  }
+
+  90% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.frageElement:hover {
+  animation: glowing 13000ms infinite;
+}
+
+/* Allgemeines für Escape-Room*/
+.lampe {
+  height: 30%;
+  width: 10%;
+  position: absolute;
+  left: 47%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.mobiliar-btn {
+  background-color: Transparent;
+  border: none;
+
+}
+
+.esc-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
+.raum {
+  background-size: cover;
+  background: url("src/assets/images/raum.png") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.escape-nav-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.escape-nav-btn-l {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
 .navbar {
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
-
 }
-*/
+
 .firstBody {
   box-sizing: border-box;
   max-width: 800px;
   text-align: left;
   margin: 0 auto;
-  padding: 10px;
 }
-
-.oneBg {
+.oneBg{
   background-position-y: top;
   background-image: url("assets/images/er-rechts/pyramidenregal.png");
   background-position: center;
@@ -30,456 +133,273 @@
   background-attachment: fixed;
 }
 
-.erklaerung-inner {
-  background-color: #b2e996;
-}
+
+/* One Pager */
 
 .p-5 {
-  background-color: #b2e996;
+  background-color: beige;
   display: grid;
   grid-template-columns: min-content 1fr;
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
 }
-
 .mb-3 {
-  margin-top: 50px;
-  text-align: center;
+ margin-top: 50px;
+ text-align: center;
 }
-
-.text-right, .text-left {
+.text-right, .text-left{
+  margin: 10px;
   padding: 10px;
-  /*width: 200px;  */
-  background-color: #b2e996
+  background-color: beige;
 }
-
-
-.h-img {
+.h-img{
   max-width: 60%;
   max-height: 60%;
   margin-top: 50px;
   margin-left: 25%;
-}
 
-.button {
-  width: 100%;
-  height: 150px;
 }
-
-.button-bg {
-  width: 100%;
-  height: 110px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.7;;
-  font-weight: bolder;
-  font-size: large;
-}
-
-.erklärung {
-  width: 100%;
-}
-
-.text-right {
-  text-align: justify;
-  margin: 1em auto;
-  padding: 2em;
-}
-
-.text-left {
-  text-align: justify;
-}
-
-.buttonEscape {
-  width: 100%;
-  text-align: center;
-  background: none;
-  border: none;
-}
-
-.odoor {
-  font-size: 75px;
-  color: #b5615f;
-  position: relative;
-  top: -100px;
-}
-
-.vorstellung {
-  width: 100%;
-}
-
-.spielvorstellung-image {
-  float: left;
-  left: 0;
-  width: 320px;
-  height: 320px;
-  padding: 20px;
-  margin-right: 40px;
-}
-
 .spielstory {
   display: grid;
-  padding: 4rem;
+  padding: 2rem;
   grid-template-columns: 300px 1fr;
   gap: 1rem;
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
   font: 500 100%/1.5 system-ui;
-}
-
-.vorImg1 {
-  position: relative;
-  left: -90px;
-  top: -350px;
-  height: 50px;
-  width: 50px;
-
-  animation: imgmove 5s forwards infinite linear;
-}
-
-.vorImg2 {
-  position: relative;
-  left: 80px;
-  top: -350px;
-  height: 50px;
-  width: 50px;
-
-  animation: imgmove 5s forwards infinite linear
 
 }
-
-.vorImg3 {
-  position: relative;
-  left: 100px;
-  top: -230px;
-  height: 200px;
-  width: 100px;
+.regelImg, .vorstellungImg{
+  max-width: 100%;
+  max-height: auto;
 }
 
-.vorImg4 {
-  position: relative;
-  left: 0;
-  top: 0;
-  height: 300px;
-  width: 300px;
-}
+/* One Pager Animationen*/
 
-.spielregeln {
-  width: 100%;
-}
-
-.spielregeln-text {
-  min-height: 320px;
-}
-
-.spielregeln-image {
-  float: right;
-  left: 0;
-  width: 320px;
-  height: 320px;
-  padding: 20px;
-  margin-right: 20px;
-}
-
-/* Frau */
-.regelImg0 {
-  position: relative;
-  left: 105px;
-  top: -850px;
-  height: 200px;
-  width: 100px;
-  z-index: 1000;
-}
-
-/* Fragezeichen Hintergrund 1 */
-.regelImg1 {
-  position: relative;
-  left: 30px;
-  top: -675px;
-  height: 265px;
-  width: 260px;
-  animation: imgmove1 5s forwards infinite linear;
-  animation-delay: 10s;
-  /*z-index: 1000;*/
-}
-
-.regelImg2 {
-  position: relative;
-  left: 0;
-  top: -470px;
-  height: 180px;
-  width: 295px;
-  animation: imgmove2 5s forwards infinite linear;
-  animation-delay: 10s;
-  /*z-index: 1000;*/
-}
-
-/* rotes Fragezeichen*/
-.regelImg3 {
-  position: relative;
-  left: 70px;
-  top: -240px;
-  height: 200px;
-  width: 150px;
-  animation: vibration 5s forwards infinite linear;
-}
-
-/* Blume */
-.regelImg4 {
-  position: relative;
-  left: 0;
-  top: 0;
-  height: 300px;
-  width: 300px;
-}
-
-
-/* Beispiel HTML */
 .galleryHtml {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryHtml figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: wechseln 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
 }
 
 .galleryHtml figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryHtml > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
+}
+
+@keyframes wechseln {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .galleryHtml figure:nth-of-type(2) {
-  animation-delay: 10s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
+/*
+.galleryHtml figure:nth-of-type(3) {
+	animation-delay: 10s;
+	opacity: 0;
+}
+*/
 
-/* Beispiel CSS */
+
+
 .galleryCss {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryCss figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: imgmove 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
 }
 
 .galleryCss figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryCss > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
+}
+
+@keyframes wechseln {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .galleryCss figure:nth-of-type(2) {
-  animation-delay: 5s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
-
+/*
 .galleryCss figure:nth-of-type(3) {
-  animation-delay: 10s;
-  opacity: 0;
+	animation-delay: 10s;
+	opacity: 0;
 }
-
-/* Beispiel JS */
+*/
 .galleryJs {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryJs figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: imgmove 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
 }
 
 .galleryJs figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryJs > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
+}
+
+@keyframes wechseln {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .galleryJs figure:nth-of-type(2) {
-  animation-delay: 5s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
 
 .galleryJs figure:nth-of-type(3) {
-  animation-delay: 10s;
-  opacity: 0;
+	animation-delay: 10s;
+	opacity: 0;
 }
 
 
-/* Footer*/
-.footer {
-  margin-top: 50px;
-  width: 100%;
-  background-color: #b2e996;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  max-width: 800px;
-}
-
-.f-list {
-  text-align: left;
-  margin: 10px;
-  font-weight: bold;
-}
-
-.f-img {
-  max-width: 60%;
-  max-height: 60%;
-  margin-top: 50px;
-  margin-left: 25%;
-}
-
-.footerEscape {
-  width: 50%;
-  background: none;
-  border: none;
-}
-
-.HTML, .CSS, .JS {
-  padding: 1em 2em;
-}
-
-header {
-
-  padding: 12px 0;
-  background-color: white;
+/* Smartphone: */
+/*
+@media only screen and (min-width: 375px) {
+	
 
 
-}
+	.p-5 {
+		max-width: 800px;
+		min-width: 375;
+		
+	}
+	.mb-3 {
+	   margin-top: 50px;
+	   text-align: center;
+	  }
+	  .text-right, .text-left{
+		margin: 10px;
+		padding: 10px;
+	  }
+	  .h-img{
+		margin: auto;
+		max-width: 60%;
+		min-width: 60%;
+		max-height: 60%;
+		margin-top: 50px;
+		margin-left: 25%;
+	  
+	  }
+	  .spielstory {
+		display: grid;
+		padding: 2rem;
+		grid-template-columns: 300px 1fr;
+		gap: 1rem;
+		align-items: center;
+		max-width: 800px;
+		min-width: 375;
+		margin: 0 auto;
+		font: 500 100%/1.5 system-ui;
+	  
+	  }
+	  .regelImg, .vorstellungImg{
+		max-width: 50%;
+		max-height: auto;
+	  }
 
-.menu {
-  margin-top: 10px;
-}
-
-.menu ul {
-  padding: 0;
-  margin: 0;
-
-}
-
-.menu ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin-left: 20px;
-  text-transform: uppercase;
-
-}
-
-.menu ul li a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-}
-
-.menu ul li a:hover {
-  color: #b2e996;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-@media (max-width: 375px) {
-
-  .menu {
-    /*position: fixed;*/
-    position: relative;
-    right: -380px;
-    width: 280px;
-    height: 94%;
-    background: white;
-    transition: 0.4s ease-in-out;
-  }
-
-  .menu ul li {
-    display: block;
-    text-align: left;
-    margin: 0;
-    padding: 20px 0 20px 26px;
-    border-bottom: 1px solid white;
-  }
-
-  .menu_icon {
-    display: inline-block;
-    position: relative;
-    right: 0;
-    top: 20px;
-  }
-
-  .menu_icon span {
-    width: 32px;
-    height: 3px;
-    background: black;
-    display: block;
-    transition: 0.2s ease-in-out;
-  }
-
-  .menu_icon span:nth-child(2) {
-    margin: 4px 0;
-  }
-
-  .menu_iconClass span:nth-child(2) {
-    display: none;
-  }
-
-  .menu_iconClass span:nth-child(1) {
-    transform: rotate(40deg);
-  }
-
-  .menu_iconClass span:nth-child(3) {
-    transform: rotate(-40deg);
-    margin-top: -3px;
-  }
-
-  .menuClasse {
-    right: 0;
-    transition: 0.4s ease-in-out;
-  }
-}
+ }
+*/
