@@ -1,22 +1,15 @@
 <div class="firstBody">
-   <!--- <app-header></app-header>
-    <div class="oneBg">
-      <app-vorstellung></app-vorstellung>
-      <app-spielregeln></app-spielregeln>
-
-     <button class="buttonEscape" routerLink="/escape">
-       <fa-icon class="odoor" [icon] ="faDoorOpen"  animation="bounce"></fa-icon>
-      </button>
-
-      <app-erklaerung></app-erklaerung>
-    </div> --->
-
-  <div class="firstBody">
     <app-header></app-header>
     <div class="oneBg">
-      <app-vorstellung></app-vorstellung>
-      <app-spielregeln></app-spielregeln>
-      <app-erklaerung></app-erklaerung></div>
-    <button routerLink="/escape">Auf zum Escaperoom</button>
-  </div>
+    <app-vorstellung></app-vorstellung>
+    <app-spielregeln></app-spielregeln>
+   
+  <button class="buttonEscape" routerLink="/escape">
+    <fa-icon class="cdoor" style="font-size: 50px; color: #b5615f;" [icon] ="faDoorClosed"></fa-icon>    
+    <fa-icon class="odoor" style="font-size: 50px; color: #b5615f;" [icon] ="faDoorOpen"></fa-icon>
+  </button>
+        
+
+
+    <app-erklaerung></app-erklaerung></div>
 </div>

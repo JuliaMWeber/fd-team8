@@ -652,12 +652,12 @@
 
 
 /*test*/
-.faDoorOpen {
-	
-  	align-items: center;
-  	justify-content: center;
+.buttonEscape{
+	width: 100%;
+	text-align: center;
+	background: none;
+	border: none;
 }
-
 
 
 
