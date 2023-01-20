@@ -5,6 +5,8 @@ import { RouterModule, Routes} from "@angular/router";
 //neu
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { AppComponent } from './app.component';
 import { OnepagerComponent } from './onepager/onepager.component';
 import { EscaperoomComponent } from './escaperoom/escaperoom.component';
@@ -42,7 +44,8 @@ const appRoutes: Routes=[
       appRoutes,
       {enableTracing:true}
     ),
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
