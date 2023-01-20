@@ -171,11 +171,12 @@
   font: 500 100%/1.5 system-ui;
 
 }
+/*
 .regelImg, .vorstellungImg{
   max-width: 100%;
   max-height: auto;
 }
-
+*/
 
 /*test*/
 .buttonEscape{
@@ -184,6 +185,55 @@
 	background: none;
 	border: none;
 }
+
+.cdoor {
+	font-size: 50px; 
+	color: #b5615f;
+	position: absolute;
+}
+.odoor {
+	font-size: 50px; 
+	color: #b5615f;
+	position: absolute;
+}
+
+
+.vorstellungHolder {
+	float: inline-start;
+	left:auto;
+	width:320px; 
+	height: 300px;
+	padding-right: 20px;
+}
+.vorImg1 {
+	position: relative; 
+	left:-90px; 
+	top:-350px; 
+	height:50px; 
+	width:50px;
+}
+.vorImg2 {
+	position: relative; 
+	left:80px; 
+	top:-3500px; 
+	height:50px; 
+	width:50px
+}
+.vorImg3 {
+	position: relative; 
+	left:100px; 
+	top:-230px; 
+	height:200px; 
+	width:100px;
+}
+.vorImg4 {
+	position: relative; 
+	left:0px; 
+	top:0px; 
+	height:300px; 
+	width:300px;
+}
+
 
 
 
