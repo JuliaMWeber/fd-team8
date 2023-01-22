@@ -151,6 +151,7 @@
 .text-right, .text-left{
   margin: 10px;
   padding: 10px;
+  /*width: 200px;  */ 
   background-color: beige;
 }
 .h-img{
@@ -187,18 +188,18 @@
 }
 
 .cdoor {
-	font-size: 50px; 
+	font-size: 75px; 
 	color: #b5615f;
 	position: absolute;
 }
 .odoor {
-	font-size: 50px; 
+	font-size: 75px; 
 	color: #b5615f;
 	position: absolute;
 }
 
 
-.vorstellungHolder {
+.vorstellung {
 	float: inline-start;
 	left:auto;
 	width:320px; 
@@ -234,10 +235,48 @@
 	width:300px;
 }
 
-
-
-
-
+.spielstory {
+	float: inline-start;
+	left:auto;
+	width:320px; 
+	height: 300px;
+	padding-right: 20px;
+}
+.regelImg0 {
+	position: relative; 
+	left: 60px; 
+	top:-2200px; 
+	height:150px; 
+	width:150px;
+}
+.regelImg1 {
+	position: relative; 
+	left: 60px; 
+	top:-2200px; 
+	height:150px; 
+	width:150px;
+}
+.regelImg2 {
+	position:relative; 
+	left:-430px; 
+	top:920px; 
+	height:250px; 
+	width:250px;
+}
+.regelImg3 {
+	position:relative; 
+	left:-430px; 
+	top:930px; 
+	height:200px; 
+	width:220px;
+}
+.regelImg {
+	position:relative; 
+	left:-600px; 
+	top:970px; 
+	height:200px; 
+	width:50px
+}
 
 /* One Pager Animationen*/
 
