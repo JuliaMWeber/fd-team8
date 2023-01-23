@@ -161,6 +161,7 @@
   margin-left: 25%;
 
 }
+/*
 .spielstory {
   display: grid;
   padding: 2rem;
@@ -172,6 +173,7 @@
   font: 500 100%/1.5 system-ui;
 
 }
+*/
 /*
 .regelImg, .vorstellungImg{
   max-width: 100%;
@@ -199,7 +201,7 @@
 }
 
 
-.vorstellung {
+.spielvorstellung {
 	float: inline-start;
 	left:auto;
 	width:320px; 
@@ -267,48 +269,82 @@
 }
 
 .spielstory {
+	/*
 	float: inline-start;
 	left:auto;
 	width:320px; 
 	height: 300px;
 	padding-right: 20px;
+	*/
+	display: grid;
+  	padding: 2rem;
+  	grid-template-columns: 300px 1fr;
+  	gap: 1rem;
+  	align-items: center;
+  	max-width: 800px;
+  	margin: 0 auto;
+  	font: 500 100%/1.5 system-ui;
 }
+/* Frau */
 .regelImg0 {
 	position: relative; 
-	left: 60px; 
-	top:-2200px; 
+	left: 200px; 
+	top:-580px; 
 	height:200px; 
-	width:200px;
+	width:100px;
 }
 .regelImg1 {
 	position:relative; 
-	left:-430px; 
-	top:980px; 
-	height:200px; 
-	width:200px;
+	left:-250px; 
+	top: -500px;
+	height:100px; 
+	width:100px;
+
+	animation: imgmove1 5s forwards infinite linear
 }
 .regelImg2 {
 	position:relative; 
-	left:-430px; 
-	top:920px; 
-	height:250px; 
-	width:250px;
+	left:0px; 
+	top:-430px; 
+	/*height:250px; 
+	width:250px;*/
+	height:200px; width:220px;
+
+	animation: imgmove1 5s forwards infinite linear
 }
+@keyframes imgmove1 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* rotes Fragezeichen*/
 .regelImg3 {
 	position:relative; 
-	left:-350px; 
-	top:-850px; 
-	
+	left:-250px; 
 	height:200px; 
 	width:150px;
 }
-.regelImg {
+/* Blume */
+.regelImg4 {
 	position:relative; 
-	left:-600px; 
-	top:970px; 
-	height:200px; 
-	width:50px
+	left:0px;
+	top:-75px;
+	height:400px; 
+	width:300px;
 }
+
 
 /* One Pager Animationen*/
 

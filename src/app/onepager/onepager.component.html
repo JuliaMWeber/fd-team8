@@ -1,18 +1,13 @@
 <div class="firstBody">
     <app-header></app-header>
     <div class="oneBg">
-    <app-vorstellung></app-vorstellung>
-    <app-spielregeln></app-spielregeln>
-   
-  <button class="buttonEscape" routerLink="/escape">
-    <!--<fa-icon class="cdoor" [icon] ="faDoorClosed" fa-bounce></fa-icon>    -->
-    <fa-icon class="odoor" [icon] ="faDoorOpen"  animation="bounce"></fa-icon>
-    <!--<fa-icon [icon]="faSync" [spin]="isSyncAnimated" (click)="isSyncAnimated=!isSyncAnimated"></fa-icon>
-    -->
-    <i class="fa-solid fa-door-closed fa-bounce"></i>
-    </button>
+      <app-vorstellung></app-vorstellung>
+      <app-spielregeln></app-spielregeln>
+    
+     <button class="buttonEscape" routerLink="/escape">
+       <fa-icon class="odoor" [icon] ="faDoorOpen"  animation="bounce"></fa-icon>
+      </button>
         
-
-
-    <app-erklaerung></app-erklaerung></div>
+      <app-erklaerung></app-erklaerung>
+    </div>
 </div>
