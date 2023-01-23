@@ -63,30 +63,6 @@
   }
 }
 
-@keyframes lampenschein {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-
-@keyframes mausbewegung {
-  10% {
-    transform: translateX(57%)
-  }
-  25% {
-    transform: translateY(50%)
-  }
-  50% {
-    transform: translateX(-40%)
-  }
-  100% {
-    transform: translateY(-100%)
-  }
-}
-
 .frageElement:hover {
   animation: glowing 13000ms infinite;
 }
@@ -99,17 +75,6 @@
   left: 47%;
   top: 20%;
   transform: translate(-50%, -50%);
-}
-
-.lampenschein {
-  height: 30%;
-  width: 15.5%;
-  position: absolute;
-  left: 44.6%;
-  top: 49%;
-  transform: translate(-50%, -50%);
-  animation: lampenschein 13000ms infinite;
-  animation-direction: alternate;
 }
 
 .mobiliar-btn {
@@ -147,135 +112,6 @@
   padding: 1%;
 }
 
-#counterMitte, #counterRechts, #counterLinks {
-  text-align: center;
-  width: 5%;
-  position: absolute;
-  left: 90%;
-  top: 90%;
-  padding: 10px;
-  background-color: #ff0000;
-}
-
-/* Modals */
-.modal-body {
-  background-color: #bad793;
-}
-
-.modal-header {
-  background-color: #b0d492;
-}
-
-.modal-footer {
-  background-color: #ffffff;
-}
-
-.buttonAnimateNav{
-  color: #283a1e;
-  font-size:20px;
-  background-color: #7ed06e;
-  text-align: center;
-  display:block;
-  position:relative;
-  padding: 5px;
-  width: 5%;
-  height: 20%;
-
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0 1px 0 #283a1e;
-  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
-
-  -webkit-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  -moz-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.buttonAnimateNav:active{
-  top:10px;
-  background-color: #466e3c;
-
-  -webkit-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  -moz-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-}
-
-.buttonAnimateNav:disabled{
-  background-color: grey;
-}
-
-.buttonAnimateNav:after{
-  content:"";
-  height:100%;
-  width:100%;
-  padding:4px;
-  position: absolute;
-  bottom:-15px;
-  left:-4px;
-  z-index:-1;
-  background-color: #466e3c;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.buttonAnimate{
-  color: #283a1e;
-  font-size:20px;
-  background-color: #7ed06e;
-  text-align: center;
-  display:block;
-  position:relative;
-  padding: 5px;
-  width: 30%;
-  height: 20%;
-
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0 1px 0 #283a1e;
-  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
-
-  -webkit-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  -moz-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.buttonAnimate:active{
-  top:10px;
-  background-color: #466e3c;
-
-  -webkit-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  -moz-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-}
-
-.buttonAnimate:disabled{
-  background-color: grey;
-}
-
-.buttonAnimate:after{
-  content:"";
-  height:100%;
-  width:100%;
-  padding:4px;
-  position: absolute;
-  bottom:-15px;
-  left:-4px;
-  z-index:-1;
-  background-color: #466e3c;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-
-
-/* onePager */
 .navbar {
   max-width: 800px;
   text-align: center;
@@ -288,8 +124,7 @@
   text-align: left;
   margin: 0 auto;
 }
-
-.oneBg {
+.oneBg{
   background-position-y: top;
   background-image: url("assets/images/er-rechts/pyramidenregal.png");
   background-position: center;
@@ -309,26 +144,24 @@
   text-align: center;
   margin: 0 auto;
 }
-
 .mb-3 {
-  margin-top: 50px;
-  text-align: center;
+ margin-top: 50px;
+ text-align: center;
 }
-
-.text-right, .text-left {
+.text-right, .text-left{
   margin: 10px;
   padding: 10px;
+  /*width: 200px;  */ 
   background-color: beige;
 }
-
-.h-img {
+.h-img{
   max-width: 60%;
   max-height: 60%;
   margin-top: 50px;
   margin-left: 25%;
 
 }
-
+/*
 .spielstory {
   display: grid;
   padding: 2rem;
@@ -340,12 +173,13 @@
   font: 500 100%/1.5 system-ui;
 
 }
-
-.regelImg, .vorstellungImg {
+*/
+/*
+.regelImg, .vorstellungImg{
   max-width: 100%;
   max-height: auto;
 }
-
+*/
 
 /*test*/
 .buttonEscape{
@@ -355,65 +189,217 @@
 	border: none;
 }
 
+.cdoor {
+	font-size: 75px; 
+	color: #b5615f;
+	position: absolute;
+}
+.odoor {
+	font-size: 75px; 
+	color: #b5615f;
+	position: absolute;
+}
 
 
+.spielvorstellung {
+	float: inline-start;
+	left:auto;
+	width:320px; 
+	height: 300px;
+	padding-right: 20px;
+}
+.vorImg1 {
+	position: relative; 
+	left:-90px; 
+	top:-350px; 
+	height:50px; 
+	width:50px;
+
+	animation: imgmove 5s forwards infinite linear
+}
+
+/*
+@keyframes imgmove{
+	0%   { transform: translate(0px,0px) rotate(0deg) }
+	33%  { transform: translate(70px,50px) rotate(120deg) }
+	66%  { transform: translate(140px,-50px) rotate(240deg) }
+	100% { transform: translate(200px,0px) rotate(359deg) }
+}
+*/
+@keyframes imgmove {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.vorImg2 {
+	position: relative; 
+	left:80px; 
+	top:-350px; 
+	height:50px; 
+	width:50px;
+	
+	animation: imgmove 5s forwards infinite linear
+
+}
+.vorImg3 {
+	position: relative; 
+	left:100px; 
+	top:-230px; 
+	height:200px; 
+	width:100px;
+}
+.vorImg4 {
+	position: relative; 
+	left:0px; 
+	top:0px; 
+	height:300px; 
+	width:300px;
+}
+
+.spielstory {
+	/*
+	float: inline-start;
+	left:auto;
+	width:320px; 
+	height: 300px;
+	padding-right: 20px;
+	*/
+	display: grid;
+  	padding: 2rem;
+  	grid-template-columns: 300px 1fr;
+  	gap: 1rem;
+  	align-items: center;
+  	max-width: 800px;
+  	margin: 0 auto;
+  	font: 500 100%/1.5 system-ui;
+}
+/* Frau */
+.regelImg0 {
+	position: relative; 
+	left: 200px; 
+	top:-580px; 
+	height:200px; 
+	width:100px;
+}
+.regelImg1 {
+	position:relative; 
+	left:-250px; 
+	top: -500px;
+	height:100px; 
+	width:100px;
+
+	animation: imgmove1 5s forwards infinite linear
+}
+.regelImg2 {
+	position:relative; 
+	left:0px; 
+	top:-430px; 
+	/*height:250px; 
+	width:250px;*/
+	height:200px; width:220px;
+
+	animation: imgmove1 5s forwards infinite linear
+}
+@keyframes imgmove1 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* rotes Fragezeichen*/
+.regelImg3 {
+	position:relative; 
+	left:-250px; 
+	height:200px; 
+	width:150px;
+}
+/* Blume */
+.regelImg4 {
+	position:relative; 
+	left:0px;
+	top:-75px;
+	height:400px; 
+	width:300px;
+}
 
 
 /* One Pager Animationen*/
 
 .galleryHtml {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryHtml figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: wechseln 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
 }
 
 .galleryHtml figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryHtml > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
 }
 
 @keyframes wechseln {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .galleryHtml figure:nth-of-type(2) {
-  animation-delay: 5s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
-
 /*
 .galleryHtml figure:nth-of-type(3) {
 	animation-delay: 10s;
@@ -422,59 +408,59 @@
 */
 
 
+
 .galleryCss {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryCss figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: wechseln 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
 }
 
 .galleryCss figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryCss > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
 }
 
 @keyframes wechseln {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .galleryCss figure:nth-of-type(2) {
-  animation-delay: 5s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
-
 /*
 .galleryCss figure:nth-of-type(3) {
 	animation-delay: 10s;
@@ -482,74 +468,74 @@
 }
 */
 .galleryJs {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryJs figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: wechseln 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
 }
 
 .galleryJs figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryJs > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
 }
 
 @keyframes wechseln {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .galleryJs figure:nth-of-type(2) {
-  animation-delay: 5s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
 
 .galleryJs figure:nth-of-type(3) {
-  animation-delay: 10s;
-  opacity: 0;
+	animation-delay: 10s;
+	opacity: 0;
 }
 
 
 /* Smartphone: */
 /*
 @media only screen and (min-width: 375px) {
-
+	
 
 
 	.p-5 {
 		max-width: 800px;
-		min-width: 375px;
-
+		min-width: 375;
+		
 	}
 	.mb-3 {
 	   margin-top: 50px;
@@ -566,7 +552,7 @@
 		max-height: 60%;
 		margin-top: 50px;
 		margin-left: 25%;
-
+	  
 	  }
 	  .spielstory {
 		display: grid;
@@ -575,10 +561,10 @@
 		gap: 1rem;
 		align-items: center;
 		max-width: 800px;
-		min-width: 375px;
+		min-width: 375;
 		margin: 0 auto;
 		font: 500 100%/1.5 system-ui;
-
+	  
 	  }
 	  .regelImg, .vorstellungImg{
 		max-width: 50%;
