@@ -215,7 +215,7 @@
 	height:50px; 
 	width:50px;
 
-	animation: imgmove 5s forwards infinite linear
+	animation: imgmove 5s forwards infinite linear;
 }
 
 /*
@@ -289,7 +289,7 @@
 .regelImg0 {
 	position: relative; 
 	left: 200px; 
-	top:-580px; 
+	top:-530px; 
 	height:200px; 
 	width:100px;
 }
@@ -300,7 +300,9 @@
 	height:100px; 
 	width:100px;
 
-	animation: imgmove1 5s forwards infinite linear
+	animation: imgmove1 5s forwards infinite linear;
+	animation-delay: 10s;
+
 }
 .regelImg2 {
 	position:relative; 
@@ -315,12 +317,15 @@
 @keyframes imgmove1 {
 	0% {
 		opacity: 0;
+		transform: scale(50%);
 	}
 	20% {
 		opacity: 1;
+		transform: scale(50%);
 	}
 	40% {
 		opacity: 1;
+		transform: scale(50%);
 	}
 	60% {
 		opacity: 0;
@@ -335,6 +340,9 @@
 	left:-250px; 
 	height:200px; 
 	width:150px;
+
+	animation: vibration 5s forwards infinite linear;
+	
 }
 /* Blume */
 .regelImg4 {
