@@ -64,15 +64,27 @@
 }
 
 @keyframes lampenschein {
-  0% {opacity: 0}
-  100% {opacity: 1}
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
 
 @keyframes mausbewegung {
-  10% {transform: translateX(57%)}
-  25% {transform: translateY(50%)}
-  50% {transform: translateX(-40%)}
-  100% {transform: translateY(-100%)}
+  10% {
+    transform: translateX(57%)
+  }
+  25% {
+    transform: translateY(50%)
+  }
+  50% {
+    transform: translateX(-40%)
+  }
+  100% {
+    transform: translateY(-100%)
+  }
 }
 
 .frageElement:hover {
@@ -89,7 +101,7 @@
   transform: translate(-50%, -50%);
 }
 
-.lampenschein{
+.lampenschein {
   height: 30%;
   width: 15.5%;
   position: absolute;
@@ -135,14 +147,132 @@
   padding: 1%;
 }
 
-.counter{
+#counterMitte, #counterRechts, #counterLinks {
   text-align: center;
   width: 5%;
   position: absolute;
   left: 90%;
   top: 90%;
   padding: 10px;
+  background-color: #ff0000;
 }
+
+/* Modals */
+.modal-body {
+  background-color: #bad793;
+}
+
+.modal-header {
+  background-color: #b0d492;
+}
+
+.modal-footer {
+  background-color: #ffffff;
+}
+
+.buttonAnimateNav{
+  color: #283a1e;
+  font-size:20px;
+  background-color: #7ed06e;
+  text-align: center;
+  display:block;
+  position:relative;
+  padding: 5px;
+  width: 5%;
+  height: 20%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 1px 0 #283a1e;
+  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
+
+  -webkit-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  -moz-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.buttonAnimateNav:active{
+  top:10px;
+  background-color: #466e3c;
+
+  -webkit-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  -moz-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+}
+
+.buttonAnimateNav:disabled{
+  background-color: grey;
+}
+
+.buttonAnimateNav:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color: #466e3c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buttonAnimate{
+  color: #283a1e;
+  font-size:20px;
+  background-color: #7ed06e;
+  text-align: center;
+  display:block;
+  position:relative;
+  padding: 5px;
+  width: 30%;
+  height: 20%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 1px 0 #283a1e;
+  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
+
+  -webkit-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  -moz-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buttonAnimate:active{
+  top:10px;
+  background-color: #466e3c;
+
+  -webkit-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  -moz-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+}
+
+.buttonAnimate:disabled{
+  background-color: grey;
+}
+
+.buttonAnimate:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color: #466e3c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 
 /* onePager */
 .navbar {
@@ -157,7 +287,8 @@
   text-align: left;
   margin: 0 auto;
 }
-.oneBg{
+
+.oneBg {
   background-position-y: top;
   background-image: url("assets/images/er-rechts/pyramidenregal.png");
   background-position: center;
@@ -174,22 +305,26 @@
   text-align: center;
   margin: 0 auto;
 }
+
 .mb-3 {
- margin-top: 50px;
- text-align: center;
+  margin-top: 50px;
+  text-align: center;
 }
-.text-right, .text-left{
+
+.text-right, .text-left {
   margin: 10px;
   padding: 10px;
   background-color: beige;
 }
-.h-img{
+
+.h-img {
   max-width: 60%;
   max-height: 60%;
   margin-top: 50px;
   margin-left: 25%;
 
 }
+
 .spielstory {
   display: grid;
   padding: 2rem;
@@ -201,7 +336,8 @@
   font: 500 100%/1.5 system-ui;
 
 }
-.regelImg, .vorstellungImg{
+
+.regelImg, .vorstellungImg {
   max-width: 100%;
   max-height: auto;
 }
@@ -209,57 +345,58 @@
 /* One Pager */
 
 .galleryHtml {
-	position: relative;
-	margin: 0;
-	background: none;
-	border: none;
+  position: relative;
+  margin: 0;
+  background: none;
+  border: none;
 }
 
 .galleryHtml figure {
-	position: absolute;
-	display: inline-block;
-	top: 0;
-	left: 2em;
-	z-index: 1;
-	animation: wechseln 15s infinite;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 2em;
+  z-index: 1;
+  animation: wechseln 15s infinite;
 }
 
 .galleryHtml figure:last-of-type {
-	position: relative;
+  position: relative;
 }
 
 .galleryHtml > figure figcaption {
-	position: absolute;
-	left: 1em;
-	font-size: 2em;
-	font-weight: bold;
-	bottom: 0.5em;
-	z-index: 2;
-	color: white;
+  position: absolute;
+  left: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  bottom: 0.5em;
+  z-index: 2;
+  color: white;
 }
 
 @keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .galleryHtml figure:nth-of-type(2) {
-	animation-delay: 5s;
-	opacity: 0;
+  animation-delay: 5s;
+  opacity: 0;
 }
+
 /*
 .galleryHtml figure:nth-of-type(3) {
 	animation-delay: 10s;
@@ -268,59 +405,59 @@
 */
 
 
-
 .galleryCss {
-	position: relative;
-	margin: 0;
-	background: none;
-	border: none;
+  position: relative;
+  margin: 0;
+  background: none;
+  border: none;
 }
 
 .galleryCss figure {
-	position: absolute;
-	display: inline-block;
-	top: 0;
-	left: 2em;
-	z-index: 1;
-	animation: wechseln 15s infinite;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 2em;
+  z-index: 1;
+  animation: wechseln 15s infinite;
 }
 
 .galleryCss figure:last-of-type {
-	position: relative;
+  position: relative;
 }
 
 .galleryCss > figure figcaption {
-	position: absolute;
-	left: 1em;
-	font-size: 2em;
-	font-weight: bold;
-	bottom: 0.5em;
-	z-index: 2;
-	color: white;
+  position: absolute;
+  left: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  bottom: 0.5em;
+  z-index: 2;
+  color: white;
 }
 
 @keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .galleryCss figure:nth-of-type(2) {
-	animation-delay: 5s;
-	opacity: 0;
+  animation-delay: 5s;
+  opacity: 0;
 }
+
 /*
 .galleryCss figure:nth-of-type(3) {
 	animation-delay: 10s;
@@ -328,60 +465,60 @@
 }
 */
 .galleryJs {
-	position: relative;
-	margin: 0;
-	background: none;
-	border: none;
+  position: relative;
+  margin: 0;
+  background: none;
+  border: none;
 }
 
 .galleryJs figure {
-	position: absolute;
-	display: inline-block;
-	top: 0;
-	left: 2em;
-	z-index: 1;
-	animation: wechseln 15s infinite;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 2em;
+  z-index: 1;
+  animation: wechseln 15s infinite;
 }
 
 .galleryJs figure:last-of-type {
-	position: relative;
+  position: relative;
 }
 
 .galleryJs > figure figcaption {
-	position: absolute;
-	left: 1em;
-	font-size: 2em;
-	font-weight: bold;
-	bottom: 0.5em;
-	z-index: 2;
-	color: white;
+  position: absolute;
+  left: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  bottom: 0.5em;
+  z-index: 2;
+  color: white;
 }
 
 @keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .galleryJs figure:nth-of-type(2) {
-	animation-delay: 5s;
-	opacity: 0;
+  animation-delay: 5s;
+  opacity: 0;
 }
 
 .galleryJs figure:nth-of-type(3) {
-	animation-delay: 10s;
-	opacity: 0;
+  animation-delay: 10s;
+  opacity: 0;
 }
 

@@ -1,16 +1,18 @@
 <div class="raum fullHeight">
   <div class="escape-nav-btn fullHeight">
-    <button routerLink="/links">&#5130;</button>
+    <button routerLink="/links" class="buttonAnimateNav">&#5130;</button>
     <div class="lampe">
       <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
         class="frageElement esc-img" src="assets/images/lampe.png">
       </button>
     </div>
     <div class="lampenschein">
-      <img class="frageElement esc-img" src="assets/images/Lampenschein.png">
+      <img class="esc-img" src="assets/images/Lampenschein.png">
     </div>
-    <div class="counter"><div class="counterValue">50</div></div>
-    <button routerLink="/rechts">&#5125;</button>
+    <div id="counterMitte">
+      <div id="counterValueMitte">0</div>
+    </div>
+    <button routerLink="/rechts" class="buttonAnimateNav">&#5125;</button>
   </div>
   <div class="großesRegal">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
@@ -23,8 +25,8 @@
     </button>
   </div>
   <div class="schreibtisch">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#schreibtischModal"><img
-      class="esc-img" src="../../assets/images/er-mitte/schreibtisch.png"></button>
+    <button class="mobiliar-btn" id="scheibtischButton" data-bs-toggle="modal" data-bs-target="#schreibtischModal"><img
+      class="esc-img frageElement" src="../../assets/images/er-mitte/schreibtisch.png"></button>
   </div>
   <div class="mauszeiger">
     <img class="esc-img" src="../../assets/images/er-mitte/mauszeiger.png">
@@ -67,8 +69,8 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <button type="button" class="buttonAnimate" data-bs-dismiss="modal"> Schließen</button>
+        <input type="submit" class="buttonAnimate" value="Speichern">
       </div>
     </div>
   </div>
@@ -90,8 +92,8 @@
         <label for="div">Gleichstellungsselektor</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <button type="button" class="buttonAnimate" data-bs-dismiss="modal"> Schließen</button>
+        <input type="submit" class="buttonAnimate" value="Speichern">
       </div>
     </div>
   </div>
@@ -113,8 +115,7 @@
         <label for="div">9</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <input type="submit" class="buttonAnimate" value="Speichern">
       </div>
     </div>
   </div>
@@ -131,16 +132,17 @@
       <div class="modal-body">
         <form>
           <h2> Für die Strukturierung des Inhalts verwendet man CSS? </h2>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <input type="radio" id="richtigStruktur" name="strukturFrage" value="wahr">
           <label for="p">Wahr</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <input type="radio" class="falsch" name="strukturFrage" value="falsch">
           <label for="div">Falsch</label><br>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
-      </div>
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+               onclick="ValidateForm('strukturFrage', 'richtigStruktur', 'schreibtischButton')">
+          Speichern
+        </button>
     </div>
   </div>
 </div>
@@ -163,8 +165,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <input type="submit" class="buttonAnimate" value="Speichern">
       </div>
     </div>
   </div>
@@ -190,28 +191,11 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <input type="submit" class="buttonAnimate" value="Speichern">
       </div>
     </div>
   </div>
 </div>
-
-<script>
-  var counterValue = document.getElementsByClassName('counterValue')[0].firstChild.innerHTML;
-  var zahl=parseInt(counterValue);
-
-  if(zahl<=25){
-    document.getElementsByClassName(counter).backgroundColor = "#ff0000";
-  } else if (counterValue<50){
-    document.getElementsByClassName(counter).backgroundColor = "#ffa500";
-
-  } else if (zahl<=75){
-    document.getElementsByClassName(counter).backgroundColor = "#ffff00";
-  } else {
-    document.getElementsByClassName(counter).backgroundColor = "#00ff00";
-  }
-</script>
 
 
 
