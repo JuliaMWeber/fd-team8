@@ -297,6 +297,9 @@
   background-attachment: fixed;
 }
 
+
+/* One Pager */
+
 .p-5 {
   background-color: beige;
   display: grid;
@@ -342,7 +345,7 @@
   max-height: auto;
 }
 
-/* One Pager */
+/* One Pager Animationen*/
 
 .galleryHtml {
   position: relative;
@@ -521,4 +524,52 @@
   animation-delay: 10s;
   opacity: 0;
 }
+
+
+/* Smartphone: */
+
+@media only screen and (min-width: 375px) {
+	
+
+
+	.p-5 {
+		max-width: 800px;
+		min-width: 375;
+		
+	}
+	.mb-3 {
+	   margin-top: 50px;
+	   text-align: center;
+	  }
+	  .text-right, .text-left{
+		margin: 10px;
+		padding: 10px;
+	  }
+	  .h-img{
+		margin: auto;
+		max-width: 60%;
+		min-width: 60%;
+		max-height: 60%;
+		margin-top: 50px;
+		margin-left: 25%;
+	  
+	  }
+	  .spielstory {
+		display: grid;
+		padding: 2rem;
+		grid-template-columns: 300px 1fr;
+		gap: 1rem;
+		align-items: center;
+		max-width: 800px;
+		min-width: 375;
+		margin: 0 auto;
+		font: 500 100%/1.5 system-ui;
+	  
+	  }
+	  .regelImg, .vorstellungImg{
+		max-width: 50%;
+		max-height: auto;
+	  }
+
+ }
 
