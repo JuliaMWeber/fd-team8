@@ -535,7 +535,7 @@
 
 	.p-5 {
 		max-width: 800px;
-		min-width: 375;
+		min-width: 375px;
 
 	}
 	.mb-3 {
@@ -562,7 +562,7 @@
 		gap: 1rem;
 		align-items: center;
 		max-width: 800px;
-		min-width: 375;
+		min-width: 375px;
 		margin: 0 auto;
 		font: 500 100%/1.5 system-ui;
 
