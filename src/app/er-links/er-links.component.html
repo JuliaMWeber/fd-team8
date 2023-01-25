@@ -2,7 +2,7 @@
   <div class="escape-nav-btn-l fullHeight">
     <button routerLink="/escape" class="buttonAnimateNav">&#5125;</button>
     <div class="lampe">
-      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
+      <button class="mobiliar-btn" id="lampenButtonLinks" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
         class="frageElement lampeImg esc-img" src="assets/images/lampe.png">
       </button>
     </div>
@@ -11,38 +11,39 @@
     </div>
     <div id="counterLinks"><div id="counterValueLinks">0</div></div>
     <div class="bett">
-      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#bettModal"><img
+      <button class="mobiliar-btn" id="bettButton" data-bs-toggle="modal" data-bs-target="#bettModal"><img
         class="frageElement esc-img" src="../../assets/images/er-links/bett.png">
       </button>
     </div>
     <div class="schrank">
-      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#schrankModal"><img
+      <button class="mobiliar-btn" id="schrankButton" data-bs-toggle="modal" data-bs-target="#schrankModal"><img
         class="frageElement esc-img" src="../../assets/images/er-links/schrank.png">
       </button>
     </div>
     <div class="nachttisch">
-      <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#nachttischModal"><img
+      <button class="mobiliar-btn" id="nachttischButton" data-bs-toggle="modal" data-bs-target="#nachttischModal"><img
         class="frageElement esc-img" src="../../assets/images/er-links/nachttisch.png">
       </button>
     </div>
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#rahmenModal">
+    <button class="mobiliar-btn frageElement " id="rahmenButton" data-bs-toggle="modal" data-bs-target="#rahmenModal">
       <div class="rahmenGruppe">
         <div class="rahmen1">
           <img
-            class="frageElement esc-img rahmenRot" src="../../assets/images/er-links/rahmen1.png">
+            class="esc-img rahmenRot" src="../../assets/images/er-links/rahmen1.png">
         </div>
         <div class="rahmen2">
           <img
-            class="frageElement esc-img rahmenGruen" src="../../assets/images/er-links/rahmen1.png">
+            class="esc-img rahmenGruen" src="../../assets/images/er-links/rahmen1.png">
         </div>
         <div class="rahmen3">
-          <img class="frageElement esc-img rahmenBlau" src="../../assets/images/er-links/rahmen1.png">
+          <img class="esc-img rahmenBlau" src="../../assets/images/er-links/rahmen1.png">
         </div>
       </div>
     </button>
   </div>
 </div>
 
+<!--- Modals  --->
 <div class="modal fade" id="lampenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -54,15 +55,17 @@
       <div class="modal-body">
         <form>
           <h2> Code wird von oben nach unten interpretiert? </h2>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <input type="radio" id="richtigRichtung" name="richtungsFrage">
           <label>Wahr</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <input type="radio" name="richtungsFrage">
           <label>Falsch</label><br>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="buttonAnimate" data-bs-dismiss="modal"> Schließen</button>
-        <input type="submit" class="buttonAnimate" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormLinks('richtungsFrage', 'richtigRichtung', 'lampenButtonLinks')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -77,15 +80,17 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h5>Wie nennt man diesen Selektor? -> * </h5>
-        <input type="radio" class="wahr" name="strukturFrage" value="p">
-        <label>Universalselektor</label><br>
-        <input type="radio" class="falsch" name="strukturFrage" value="div">
-        <label>Gleichstellungsselektor</label><br>
+        <h5>Was macht dieser Selektor? -> .wichtig </h5>
+        <input type="radio" name="wichtigFrage">
+        <label>Selektiert alle Elemente mit der id 'wichtig'</label><br>
+        <input type="radio" id="richtigWichtigSelektor" name="wichtigFrage">
+        <label>Selektiert alle Elemente mit der Klasse 'wichtig'</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="buttonAnimate" data-bs-dismiss="modal"> Schließen</button>
-        <input type="submit" class="buttonAnimate" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+        onclick="ValidateFormLinks('wichtigFrage', 'richtigWichtigSelektor', 'bettButton')">
+        Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -100,15 +105,19 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h5> Wie viele Abstufungen von Überschriften gibt es? </h5>
-        <input type="radio" class="wahr" name="strukturFrage" value="p">
-        <label>3</label><br>
-        <input type="radio" class="falsch" name="strukturFrage" value="div">
-        <label>9</label><br>
+        <h5> Mit welchem Attribut wird eine externe Datei eingebunden? </h5>
+        <input type="radio"name="einbindenFrage">
+        <label>quelle</label><br>
+        <input type="radio" name="einbindenFrage" id="richtigEinbinden">
+        <label>src</label><br>
+        <input type="radio" name="einbindenFrage">
+        <label>script</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="buttonAnimate" data-bs-dismiss="modal"> Schließen</button>
-        <input type="submit" class="buttonAnimate" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormLinks('einbindenFrage', 'richtigEinbinden', 'schrankButton')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -125,19 +134,21 @@
       <div class="modal-body">
         <form>
           <h5> Welche Maße hat eine Box mit folgenden Angaben? <br> width 300px <br>
-            width 200px<br>
+            height 200px<br>
             margin 20px35px<br>
             padding 5px15px20px<br>
           </h5>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
+          <input type="radio"  name="boxFrage" id="richtigBox">
           <label>Breite 410 x Höhe 275</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <input type="radio"  name="boxFrage" value="div">
           <label>Breite 275 x Höhe 410</label><br>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="buttonAnimate" data-bs-dismiss="modal"> Schließen</button>
-        <input type="submit" class="buttonAnimate" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormLinks('boxFrage', 'richtigBox', 'nachttischButton')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -154,17 +165,19 @@
       <div class="modal-body">
         <form>
           <h5> Wofür stehen die Angaben RGB? </h5>
-          <input type="radio" class="richtig" name="strukturFrage" value="p">
-          <label>Richtig Geil Bosshaft</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
+          <input type="radio" name="rgbFrage">
+          <label>Rosa Gelb Braun</label><br>
+          <input type="radio" id="richtigRGB" name="rgbFrage">
           <label>Rot Grün Blau</label><br>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
-          <label>Randerscheinung Gleicht Bauhaft</label><br>
+          <input type="radio" name="rgbFrage">
+          <label>Rot Gelb Blau</label><br>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="buttonAnimate" data-bs-dismiss="modal"> Schließen</button>
-        <input type="submit" class="buttonAnimate" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormLinks('rgbFrage', 'richtigRGB', 'rahmenButton')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>

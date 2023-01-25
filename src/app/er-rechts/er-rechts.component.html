@@ -16,7 +16,9 @@
   <div class="lampenschein">
     <img class="frageElement esc-img" src="assets/images/Lampenschein.png">
   </div>
-  <div id="counterRechts"><div id="counterValueRechts">0</div></div>
+  <div id="counterRechts">
+    <div id="counterValueRechts">0</div>
+  </div>
   <div class="pyramidenRegal">
     <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#pyramidenRegalModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/pyramideOhneWecker.png">
@@ -31,9 +33,8 @@
     </button>
   </div>
   <div class="druckerRegal">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#druckerRegalModal"><img
-      class="frageElement esc-img" src="../../assets/images/er-rechts/druckerRegal.png">
-    </button>
+    <img class="frageElement esc-img" src="../../assets/images/er-rechts/druckerRegal.png">
+
     <div class="drucker">
       <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#druckerModal">
         <img class="frageElement esc-img druckerUnhover" src="../../assets/images/er-rechts/druckerUnhover.png">
@@ -43,6 +44,7 @@
   </div>
 </div>
 
+<!--- Modals  --->
 <div class="modal fade" id="lampenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -53,16 +55,22 @@
       </div>
       <div class="modal-body">
         <form>
-          <h2> Code wird von oben nach unten interpretiert? </h2>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
-          <label>Wahr</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
-          <label>Falsch</label><br>
+          <h2> Welche Konvention gibt es wirklich? </h2>
+          <input type="radio" name="konventionsFrage">
+          <label>Variablen sollte mit einem Großbuchstaben beginnen</label><br>
+          <input type="radio" name="konventionsFrage">
+          <label>Variablen sind immer in CAPSLOCK geschrieben</label><br>
+          <input type="radio" name="konventionsFrage" id="richtigKonvention">
+          <label>Variablen sind immer komplett klein geschrieben</label><br>
+          <input type="radio" name="konventionsFrage">
+          <label>Variablen sind immer in Englisch geschrieben</label><br>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('konventionsFrage', 'richtigKonvention', 'lampenButtonRechts')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -77,15 +85,17 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h5>Wie nennt man diesen Selektor? -> * </h5>
-        <input type="radio" class="wahr" name="strukturFrage" value="p">
-        <label>Universalselektor</label><br>
-        <input type="radio" class="falsch" name="strukturFrage" value="div">
-        <label>Gleichstellungsselektor</label><br>
+        <h5>Wie nennt man diesen Selektor? -> #inhalt </h5>
+        <input type="radio" id="richtigInhaltSelektor" name="inhaltFrage">
+        <label>Selektiert alle Elemente mit der id 'inhalt'</label><br>
+        <input type="radio" name="inhaltFrage">
+        <label>Selektiert alle Elemente mit der Klasse 'inhalt'</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('inhaltFrage', 'richtigInhaltSelektor', 'fensterButton')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -100,15 +110,17 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h5> Wie viele Abstufungen von Überschriften gibt es? </h5>
-        <input type="radio" class="wahr" name="strukturFrage" value="p">
-        <label>3</label><br>
-        <input type="radio" class="falsch" name="strukturFrage" value="div">
-        <label>9</label><br>
+        <h5> Guter Code sollte ... </h5>
+        <input type="radio" id="richtigGuterCode" name="guterCodeFrage" value="p">
+        <label>... lesbar & verständlich sein</label><br>
+        <input type="radio" class="falsch" name="guterCodeFrage" value="div">
+        <label>... einfach nur funktionieren</label><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('guterCodeFrage', 'richtigGuterCode', 'pyramidenRegalButton')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -124,20 +136,18 @@
       </div>
       <div class="modal-body">
         <form>
-          <h5> Welche Maße hat eine Box mit folgenden Angaben? <br> width 300px <br>
-            width 200px<br>
-            margin 20px35px<br>
-            padding 5px15px20px<br>
-          </h5>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
-          <label>Breite 410 x Höhe 275</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
-          <label>Breite 275 x Höhe 410</label><br>
+          <h5> In JavaScript muss ich Datentypen explizit angeben</h5>
+          <input type="radio" class="wahr" name="datentypFrage" value="p">
+          <label>Wahr</label><br>
+          <input type="radio" id="richtigDatentyp" name="datentypFrage" value="div">
+          <label>Falsch</label><br>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('datentypFrage', 'richtigDatentyp', 'kommodenButton')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
@@ -148,55 +158,29 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Frage5">Frage 5</h5>
+        <h5 class="modal-title">Frage 5</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
-          <h5> Wofür stehen die Angaben RGB? </h5>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
-          <label>Richtig Geil Bosshaft</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
-          <label>Rot Grün Blau</label><br>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
-          <label>Randerscheinung Gleicht Bauhaft</label><br>
+          <h5> Welcher relative Link ist funktionsfähig? </h5>
+          <input type="radio" name="relLinkFrage">
+          <label>&lt;a href=".../ergebnisse/2023.html&quot;>Linktext&lt;/a&gt;</label><br>
+          <input type="radio" name="relLinkFrage">
+          <label>&lt;a href=”../ergebnisse/2023.html”&gt;&lt;/a&gt;</label><br>
+          <input type="radio" name="relLinkFrage" id="richtigRelLink">
+          <label>&lt;a href=”../ergebnisse/2023.html”&gt;Linktext&lt;/a&gt;</label><br>
+          <input type="radio" name="relLinkFrage">
+          <label>&lt;a href=”..\ergebnisse\2023.html”&gt;Linktext&lt;/a&gt;</label><br>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('relLinkFrage', 'richtigRelLink', 'druckerButton')">
+          Speichern
+        </button>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="druckerRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="Frage5">Frage 5</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <h5> Wofür stehen die Angaben RGB? </h5>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
-          <label>Richtig Geil Bosshaft</label><br>
-          <input type="radio" class="falsch" name="strukturFrage" value="div">
-          <label>Rot Grün Blau</label><br>
-          <input type="radio" class="wahr" name="strukturFrage" value="p">
-          <label>Randerscheinung Gleicht Bauhaft</label><br>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Schließen</button>
-        <input type="submit" class="btn btn-primary" value="Speichern">
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-
-</script>
