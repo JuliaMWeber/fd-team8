@@ -151,7 +151,7 @@
 .text-right, .text-left{
   margin: 10px;
   padding: 10px;
-  /*width: 200px;  */ 
+  /*width: 200px;  */
   background-color: beige;
 }
 .h-img{
@@ -190,12 +190,12 @@
 }
 
 .cdoor {
-	font-size: 75px; 
+	font-size: 75px;
 	color: #b5615f;
 	position: absolute;
 }
 .odoor {
-	font-size: 75px; 
+	font-size: 75px;
 	color: #b5615f;
 	position: absolute;
 }
@@ -204,15 +204,15 @@
 .spielvorstellung {
 	float: inline-start;
 	left:auto;
-	width:320px; 
+	width:320px;
 	height: 300px;
 	padding-right: 20px;
 }
 .vorImg1 {
-	position: relative; 
-	left:-90px; 
-	top:-350px; 
-	height:50px; 
+	position: relative;
+	left:-90px;
+	top:-350px;
+	height:50px;
 	width:50px;
 
 	animation: imgmove 5s forwards infinite linear;
@@ -244,27 +244,27 @@
 	}
 }
 .vorImg2 {
-	position: relative; 
-	left:80px; 
-	top:-350px; 
-	height:50px; 
+	position: relative;
+	left:80px;
+	top:-350px;
+	height:50px;
 	width:50px;
-	
+
 	animation: imgmove 5s forwards infinite linear
 
 }
 .vorImg3 {
-	position: relative; 
-	left:100px; 
-	top:-230px; 
-	height:200px; 
+	position: relative;
+	left:100px;
+	top:-230px;
+	height:200px;
 	width:100px;
 }
 .vorImg4 {
-	position: relative; 
-	left:0px; 
-	top:0px; 
-	height:300px; 
+	position: relative;
+	left:0px;
+	top:0px;
+	height:300px;
 	width:300px;
 }
 
@@ -272,7 +272,7 @@
 	/*
 	float: inline-start;
 	left:auto;
-	width:320px; 
+	width:320px;
 	height: 300px;
 	padding-right: 20px;
 	*/
@@ -285,19 +285,25 @@
   	margin: 0 auto;
   	font: 500 100%/1.5 system-ui;
 }
+
+.regelBild{
+  position: absolute;
+  width: 100px;
+  height: 10%;
+}
 /* Frau */
 .regelImg0 {
-	position: relative; 
-	left: 200px; 
-	top:-530px; 
-	height:200px; 
+	position: absolute;
+	left: 200px;
+	top:-530px;
+	height:200px;
 	width:100px;
 }
 .regelImg1 {
-	position:relative; 
-	left:-250px; 
+	position:absolute;
+	left:-250px;
 	top: -500px;
-	height:100px; 
+	height:100px;
 	width:100px;
 
 	animation: imgmove1 5s forwards infinite linear;
@@ -305,15 +311,36 @@
 
 }
 .regelImg2 {
-	position:relative; 
-	left:0px; 
-	top:-430px; 
-	/*height:250px; 
+	position:relative;
+	left:0px;
+	top:-430px;
+	/*height:250px;
 	width:250px;*/
 	height:200px; width:220px;
 
 	animation: imgmove1 5s forwards infinite linear
 }
+
+/* rotes Fragezeichen*/
+.regelImg3 {
+  position:relative;
+  left:-250px;
+  height:200px;
+  width:150px;
+
+  animation: vibration 5s forwards infinite linear;
+
+}
+/* Blume */
+.regelImg4 {
+  position:relative;
+  left:0px;
+  top:-75px;
+  height:400px;
+  width:300px;
+}
+
+
 @keyframes imgmove1 {
 	0% {
 		opacity: 0;
@@ -334,25 +361,6 @@
 		opacity: 0;
 	}
 }
-/* rotes Fragezeichen*/
-.regelImg3 {
-	position:relative; 
-	left:-250px; 
-	height:200px; 
-	width:150px;
-
-	animation: vibration 5s forwards infinite linear;
-	
-}
-/* Blume */
-.regelImg4 {
-	position:relative; 
-	left:0px;
-	top:-75px;
-	height:400px; 
-	width:300px;
-}
-
 
 /* One Pager Animationen*/
 
@@ -370,7 +378,7 @@
 	top: 0;
 	left: 2em;
 	z-index: 1;
-	animation: wechseln 15s infinite;
+	animation: imgmove 15s infinite;
 }
 
 .galleryHtml figure:last-of-type {
@@ -387,23 +395,6 @@
 	color: white;
 }
 
-@keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
 .galleryHtml figure:nth-of-type(2) {
 	animation-delay: 10s;
@@ -432,7 +423,7 @@
 	top: 0;
 	left: 2em;
 	z-index: 1;
-	animation: wechseln 15s infinite;
+	animation: imgmove 15s infinite;
 }
 
 .galleryCss figure:last-of-type {
@@ -447,24 +438,6 @@
 	bottom: 0.5em;
 	z-index: 2;
 	color: white;
-}
-
-@keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
 }
 
 .galleryCss figure:nth-of-type(2) {
@@ -492,7 +465,7 @@
 	top: 0;
 	left: 2em;
 	z-index: 1;
-	animation: wechseln 15s infinite;
+	animation: imgmove 15s infinite;
 }
 
 .galleryJs figure:last-of-type {
@@ -509,24 +482,6 @@
 	color: white;
 }
 
-@keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
 .galleryJs figure:nth-of-type(2) {
 	animation-delay: 5s;
 	opacity: 0;
@@ -541,13 +496,13 @@
 /* Smartphone: */
 /*
 @media only screen and (min-width: 375px) {
-	
+
 
 
 	.p-5 {
 		max-width: 800px;
 		min-width: 375;
-		
+
 	}
 	.mb-3 {
 	   margin-top: 50px;
@@ -564,7 +519,7 @@
 		max-height: 60%;
 		margin-top: 50px;
 		margin-left: 25%;
-	  
+
 	  }
 	  .spielstory {
 		display: grid;
@@ -576,7 +531,7 @@
 		min-width: 375;
 		margin: 0 auto;
 		font: 500 100%/1.5 system-ui;
-	  
+
 	  }
 	  .regelImg, .vorstellungImg{
 		max-width: 50%;
