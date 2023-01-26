@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import "bootstrap";
-
 /*Animationen*/
 @keyframes glowing {
   0% {
@@ -63,9 +61,73 @@
   }
 }
 
+@keyframes lampenschein {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes mausbewegung {
+  10% {
+    transform: translateX(57%)
+  }
+  25% {
+    transform: translateY(50%)
+  }
+  50% {
+    transform: translateX(-40%)
+  }
+  100% {
+    transform: translateY(-100%)
+  }
+}
+
 .frageElement:hover {
   animation: glowing 13000ms infinite;
 }
+
+@keyframes imgmove {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imgmove1 {
+  0% {
+    opacity: 0;
+    transform: scale(50%);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(50%);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(50%);
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 /* Allgemeines für Escape-Room*/
 .lampe {
@@ -75,6 +137,17 @@
   left: 47%;
   top: 20%;
   transform: translate(-50%, -50%);
+}
+
+.lampenschein {
+  height: 30%;
+  width: 15.5%;
+  position: absolute;
+  left: 44.6%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  animation: lampenschein 13000ms infinite;
+  animation-direction: alternate;
 }
 
 .mobiliar-btn {
@@ -112,12 +185,144 @@
   padding: 1%;
 }
 
+#counterMitte, #counterRechts, #counterLinks {
+  text-align: center;
+  width: 5%;
+  position: absolute;
+  left: 90%;
+  top: 90%;
+  padding: 10px;
+  background-color: #ff0000;
+}
+
+/* Modals */
+.modal-body {
+  background-color: #bad793;
+}
+
+.modal-header {
+  background-color: #b0d492;
+}
+
+.modal-footer {
+  background-color: #ffffff;
+}
+
+.buttonAnimateNav{
+  color: #283a1e;
+  font-size:20px;
+  background-color: #7ed06e;
+  text-align: center;
+  display:block;
+  position:relative;
+  padding: 5px;
+  width: 5%;
+  height: 20%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 1px 0 #283a1e;
+  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
+
+  -webkit-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  -moz-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.buttonAnimateNav:active{
+  top:10px;
+  background-color: #466e3c;
+
+  -webkit-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  -moz-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+}
+
+.buttonAnimateNav:disabled{
+  background-color: grey;
+}
+
+.buttonAnimateNav:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color: #466e3c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buttonAnimate{
+  color: #283a1e;
+  font-size:20px;
+  background-color: #7ed06e;
+  text-align: center;
+  display:block;
+  position:relative;
+  padding: 5px;
+  width: 30%;
+  height: 20%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 1px 0 #283a1e;
+  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
+
+  -webkit-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  -moz-box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  box-shadow:inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buttonAnimate:active{
+  top:10px;
+  background-color: #466e3c;
+
+  -webkit-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  -moz-box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  box-shadow:inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+}
+
+.buttonAnimate:disabled{
+  background-color: grey;
+}
+
+.buttonAnimate:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color: #466e3c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
 .navbar {
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
 }
 
+
+
+
+/* One Pager */
 .firstBody {
   box-sizing: border-box;
   max-width: 800px;
@@ -132,9 +337,6 @@
   background-size: 55%;
   background-attachment: fixed;
 }
-
-
-/* One Pager */
 
 .p-5 {
   background-color: beige;
@@ -226,23 +428,7 @@
 	100% { transform: translate(200px,0px) rotate(359deg) }
 }
 */
-@keyframes imgmove {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
+
 .vorImg2 {
 	position: relative;
 	left:80px;
@@ -341,26 +527,6 @@
 }
 
 
-@keyframes imgmove1 {
-	0% {
-		opacity: 0;
-		transform: scale(50%);
-	}
-	20% {
-		opacity: 1;
-		transform: scale(50%);
-	}
-	40% {
-		opacity: 1;
-		transform: scale(50%);
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
 /* One Pager Animationen*/
 
