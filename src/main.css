@@ -182,6 +182,12 @@
 */
 
 /*test*/
+.text-right {
+	text-align: justify;
+	margin: 1em auto;
+}
+
+
 .buttonEscape{
 	width: 100%;
 	text-align: center;
