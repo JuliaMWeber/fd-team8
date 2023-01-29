@@ -5,8 +5,8 @@
   height: 20%;
   width: 30%;
   position: absolute;
-  left: 50%;
-  top: 75%;
+  left: 67%;
+  top: 70%;
   transform: scaleX(-1);
 }
 
@@ -14,16 +14,16 @@
   height: 40%;
   width: 15%;
   position: fixed;
-  left: 71%;
-  top: 62%;
+  left: 60%;
+  top: 45%;
 }
 
 .nachttisch {
   height: 20%;
   width: 7%;
   position: absolute;
-  left: 23%;
-  top: 72%;
+  left: 22%;
+  top: 65%;
 }
 
 .rahmen1 {
@@ -45,7 +45,7 @@
 .rahmen3 {
   height: 20%;
   width: 7%;
-  position: absolute;
+  position: fixed;
   left: 55%;
   top: 35%;
 }

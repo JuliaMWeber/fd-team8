@@ -1,5 +1,8 @@
 let counterVal = localStorage.getItem(counterValUebergabe());
 
+if(counterVal=== null){
+  counterVal=0;
+}
 
 function incrementClickLinks() {
   if (counterVal < 100) {

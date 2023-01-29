@@ -1,4 +1,4 @@
-<div class="raum fullHeight">
+<div class="raum fullHeight" onmousemove="updateDisplayRechts(counterVal)">
   <div class="escape-nav-btn fullHeight">
     <button routerLink="/escape" class="buttonAnimateNav">&#5130;</button>
   </div>
@@ -8,27 +8,33 @@
       <img class="frageElement esc-img fensterHover" src="../../assets/images/er-rechts/fensterMitEnte6.png">
     </button>
   </div>
-  <div class="lampe">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
+  <div>
+    <button class="mobiliar-btn lampe" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
       class="frageElement lampeImg esc-img" src="assets/images/lampe.png">
     </button>
   </div>
+
   <div class="lampenschein">
     <img class="frageElement esc-img" src="assets/images/Lampenschein.png">
   </div>
+
   <div id="counterRechts">
     <div id="counterValueRechts">0</div>
   </div>
-  <div class="pyramidenRegal">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#pyramidenRegalModal"><img
+
+
+
+  <div>
+    <button class="mobiliar-btn pyramidenRegal" data-bs-toggle="modal" data-bs-target="#pyramidenRegalModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/pyramideOhneWecker.png">
     </button>
   </div>
+
   <div class="pyramidenWecker">
     <img class="frageElement esc-img" src="../../assets/images/er-rechts/pyramidenwecker.png">
   </div>
-  <div class="kommode">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#kommodenModal"><img
+  <div>
+    <button class="mobiliar-btn kommode" data-bs-toggle="modal" data-bs-target="#kommodenModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/kommode.png">
     </button>
   </div>
@@ -183,4 +189,8 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById('counterValueRechts').innerHTML=counterVal;
+</script>
 

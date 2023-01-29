@@ -1,42 +1,44 @@
-<div class="raum fullHeight">
+<div class="raum fullHeight" onmousemove="updateDisplayMitte(counterVal)">
   <div class="escape-nav-btn fullHeight">
     <button routerLink="/links" class="buttonAnimateNav">&#5130;</button>
-    <div class="lampe">
-      <button class="mobiliar-btn" id="lampenButtonMitte" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
+    <div>
+      <button class="mobiliar-btn lampe" id="lampenButtonMitte" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
         class="frageElement esc-img" src="assets/images/lampe.png">
       </button>
     </div>
     <div class="lampenschein">
       <img class="esc-img" src="assets/images/Lampenschein.png">
     </div>
+
     <div id="counterMitte">
       <div id="counterValueMitte">0</div>
     </div>
+
     <button routerLink="/rechts" class="buttonAnimateNav">&#5125;</button>
   </div>
-  <div class="großesRegal">
-    <button class="mobiliar-btn" id="großesRegalButton" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
+  <div>
+    <button class="mobiliar-btn großesRegal" id="großesRegalButton" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
       class="frageElement esc-img" src="../../assets/images/er-mitte/großesRegal.png">
     </button>
   </div>
-  <div class="monstera">
-    <button class="mobiliar-btn" id="monsteraButton" data-bs-toggle="modal" data-bs-target="#monsteraModal">
+  <div>
+    <button class="mobiliar-btn monstera" id="monsteraButton" data-bs-toggle="modal" data-bs-target="#monsteraModal">
       <img class="esc-img" src="../../assets/images/er-mitte/monstera.png">
     </button>
   </div>
-  <div class="schreibtisch">
-    <button class="mobiliar-btn" id="schreibtischButton" data-bs-toggle="modal" data-bs-target="#schreibtischModal"><img
+  <div>
+    <button class="mobiliar-btn schreibtisch" id="schreibtischButton" data-bs-toggle="modal" data-bs-target="#schreibtischModal"><img
       class="esc-img frageElement" src="../../assets/images/er-mitte/schreibtisch.png"></button>
   </div>
   <div class="mauszeiger">
     <img class="esc-img" src="../../assets/images/er-mitte/mauszeiger.png">
   </div>
-  <div class="kleinesRegal">
-    <button class="mobiliar-btn" id="kleinesRegalButton" data-bs-toggle="modal" data-bs-target="#kleinesRegalModal"><img
+  <div>
+    <button class="mobiliar-btn kleinesRegal" id="kleinesRegalButton" data-bs-toggle="modal" data-bs-target="#kleinesRegalModal"><img
       class="esc-img" src="../../assets/images/er-mitte/kleinesRegal.png"></button>
 
-    <div class="blauerWecker">
-      <button class="mobiliar-btn" id="blauerWeckerButton" data-bs-toggle="modal" data-bs-target="#blauerWeckerModal"><img
+    <div>
+      <button class="mobiliar-btn blauerWecker" id="blauerWeckerButton" data-bs-toggle="modal" data-bs-target="#blauerWeckerModal"><img
         class="esc-img" src="../../assets/images/er-mitte/uhr.png"></button>
     </div>
   </div>
@@ -212,6 +214,9 @@
   </div>
 </div>
 
+<script>
+  document.getElementById('counterValueMitte').innerHTML=counterVal;
+</script>
 
 
 

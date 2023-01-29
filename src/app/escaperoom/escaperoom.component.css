@@ -12,8 +12,8 @@
   height: 45%;
   width: 25%;
   position: fixed;
-  top: 85%;
-  left: 40%;
+  top: 65%;
+  left: 27%;
   transform: translate(-50%, -50%);
 }
 
@@ -21,7 +21,7 @@
   height: 1.5%;
   width: 0.5%;
   position: absolute;
-  left: 55%;
+  left: 50%;
   top: 50%;
   animation: mausbewegung 13000ms infinite;
   animation-direction: alternate;
@@ -31,8 +31,8 @@
   height: 35%;
   width: 14%;
   position: fixed;
-  top: 85%;
-  left: 15%;
+  top: 68%;
+  left: 10%;
   transform: translate(-50%, -50%);
 }
 
@@ -40,8 +40,8 @@
   height: 40%;
   width: 20%;
   position: absolute;
-  top: 45%;
-  left: 13%;
+  top: 25%;
+  left: 3%;
   transform: translate(-50%, -50%);
 }
 
@@ -50,17 +50,17 @@
   height: 40%;
   width: 20%;
   position: absolute;
-  top: 45%;
-  left: 65%;
+  top: 35%;
+  left: 60%;
   transform: translate(-50%, -50%);
 }
 
 .blauerWecker {
-  height: 16.5%;
-  width: 12.5%;
+  height: 7%;
+  width: 2.7%;
   position: absolute;
-  top: 0%;
-  left: 125%;
+  top: 31%;
+  left: 83%;
   animation: vibration 2s ease 0s infinite normal forwards;
 }
 

@@ -130,12 +130,13 @@
 
 
 /* Allgemeines für Escape-Room*/
+
 .lampe {
   height: 30%;
   width: 10%;
   position: absolute;
-  left: 47%;
-  top: 20%;
+  left: 42.2%;
+  top: 7%;
   transform: translate(-50%, -50%);
 }
 
@@ -194,6 +195,19 @@
   padding: 10px;
   background-color: #ff0000;
 }
+
+
+#valbtnMitte, #valbtnRechts, #valbtnLinks {
+  font-size: 90%;
+  text-align: center;
+  width: 10%;
+  height: 4%;
+  position: absolute;
+  left: 79%;
+  top: 90%;
+  padding: 1px;
+}
+
 
 /* Modals */
 .modal-body {

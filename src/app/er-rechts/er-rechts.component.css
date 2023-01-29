@@ -1,8 +1,6 @@
 @import "../../main.css";
 @import "bootstrap";
 
-
-
 .fenster {
   height: 40%;
   width: 20%;
@@ -38,8 +36,8 @@
   height: 50%;
   width: 25%;
   position: fixed;
-  top: 80.5%;
-  left: 67.5%;
+  top: 60%;
+  left: 57%;
   transform: translate(-50%, -50%);
 }
 
@@ -47,8 +45,8 @@
   height: 8%;
   width: 4%;
   position: absolute;
-  left: 77%;
-  top: 56.1%;
+  left: 78.5%;
+  top: 58.5%;
   animation: vibration 2s ease 0s infinite normal forwards;
 }
 
@@ -56,8 +54,8 @@
   height: 25%;
   width: 20%;
   position: fixed;
-  top: 83%;
-  left: 40%;
+  top: 73%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 
