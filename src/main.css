@@ -182,10 +182,25 @@
 */
 
 /*test*/
+.vorstellung {
+	width: 500px; padding: 50px; margin: 0 50px
+}
+.spielregeln {
+	width: 500px; padding: 50px; margin: 0 50px
+}
+.button {
+	width: 500px; padding: 50px; margin: 0 50px
+}
+.erklärung {
+	width: 500px; padding: 50px; margin: 0 50px
+}
+
+
 .text-right {
 	text-align: justify;
 	margin: 1em auto;
 }
+
 
 
 .buttonEscape{
