@@ -65,7 +65,7 @@ function updateDisplayMitte(val) {
     document.getElementById('counterMitte').style.backgroundColor = "#00ff00";
   }
   if (val === 100) {
-    alert("Herzlichen Glückwunsch. Du wirst die Klausur bestehen!")
+    window.location.href='/endpage'
   }
 
 }
@@ -84,7 +84,7 @@ function updateDisplayLinks(val) {
     document.getElementById('counterLinks').style.backgroundColor = "#00ff00";
   }
   if (val === 100) {
-    alert("Herzlichen Glückwunsch. Du wirst die Klausur bestehen!")
+    window.location.href='/endpage'
   }
 
 }
@@ -102,7 +102,7 @@ function updateDisplayRechts(val) {
     document.getElementById('counterRechts').style.backgroundColor = "#00ff00";
   }
   if (val >= 100) {
-    alert("Herzlichen Glückwunsch. Du wirst die Klausur bestehen!")
+    window.location.href='/endpage'
   }
 
 }

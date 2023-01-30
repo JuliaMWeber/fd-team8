@@ -12,32 +12,20 @@
 
 .fensterHover {
   height: 100%;
-  top: 18.5px;
-  animation: lampenschein 17ms;
+  top: 19px;
+  animation: entenfenster 9000ms infinite;
 }
 
-.fenster .fensterHover {
-  display: none;
-  position: absolute;
 
-}
 
-.fenster:hover .fensterHover {
-  display: inline;
-  transition: opacity .6s;
-}
-
-.fenster:hover .fensterUnhover {
-  display: none;
-}
 
 .pyramidenRegal {
   display: inline;
   height: 50%;
   width: 25%;
   position: fixed;
-  top: 60%;
-  left: 57%;
+  top: 85%;
+  left: 69%;
   transform: translate(-50%, -50%);
 }
 
@@ -54,8 +42,8 @@
   height: 25%;
   width: 20%;
   position: fixed;
-  top: 73%;
-  left: 30%;
+  top: 85%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 
@@ -72,26 +60,17 @@
   height: 100%;
   width: 35%;
   position: absolute;
-  top: -25%;
+  top: -11%;
   left: 96%;
+
 }
 
 .druckerHover {
   height: 120%;
-  top: 39%
+  top: 25%;
+  animation: druckerHover 8000ms infinite;
 }
 
-.drucker .druckerHover {
-  display: none;
-  position: absolute;
-  transition: opacity .6s;
-}
-
-.drucker:hover .druckerHover {
-  display: inline;
-  transition: opacity .6s;
-}
-
-.drucker:hover .druckerUnhover {
-  display: none;
+.druckerUnhover {
+  animation: druckerUnhover 8000ms infinite;
 }
