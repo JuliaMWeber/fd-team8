@@ -4,6 +4,10 @@ if(counterVal=== null){
   counterVal=0;
 }
 
+function restartEscape(){
+  counterVal=0;
+}
+
 function incrementClickLinks() {
   if (counterVal < 100) {
     updateDisplayLinks(counterVal += 6);
@@ -64,7 +68,7 @@ function updateDisplayMitte(val) {
   } else if (val >= 100) {
     document.getElementById('counterMitte').style.backgroundColor = "#00ff00";
   }
-  if (val === 100) {
+  if (val >=100) {
     window.location.href='/endpage'
   }
 
@@ -83,7 +87,7 @@ function updateDisplayLinks(val) {
   } else if (val >= 100) {
     document.getElementById('counterLinks').style.backgroundColor = "#00ff00";
   }
-  if (val === 100) {
+  if (val >= 100) {
     window.location.href='/endpage'
   }
 
