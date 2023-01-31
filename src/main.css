@@ -136,7 +136,7 @@
 
 /* One Pager */
 
-.p-5 {
+.p-5{
   background-color: beige;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -148,40 +148,31 @@
  margin-top: 50px;
  text-align: center;
 }
-.text-right, .text-left{
+.h-img{
+	max-width: 60%;
+	max-height: 60%;
+	margin-top: 50px;
+	margin-left: 25%;
+  
+  }
+.text-right, .text-left {
   margin: 10px;
   padding: 10px;
   /*width: 200px;  */ 
   background-color: beige;
 }
-.h-img{
-  max-width: 60%;
-  max-height: 60%;
-  margin-top: 50px;
-  margin-left: 25%;
 
-}
-/*
-.spielstory {
-  display: grid;
-  padding: 2rem;
-  grid-template-columns: 300px 1fr;
-  gap: 1rem;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  font: 500 100%/1.5 system-ui;
 
+h3 {
+  padding: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
 }
-*/
-/*
-.regelImg, .vorstellungImg{
-  max-width: 100%;
-  max-height: auto;
-}
-*/
+
 
 /*test*/
+/*
 .vorstellung {
 	width: 500px; padding: 50px; margin: 0 50px
 }
@@ -194,33 +185,25 @@
 .erklärung {
 	width: 500px; padding: 50px; margin: 0 50px
 }
-
-
-.text-right {
-	text-align: justify;
-	margin: 1em auto;
-}
-
-
+*/
 
 .buttonEscape{
 	width: 100%;
+	margin: 25px auto;
 	text-align: center;
 	background: none;
 	border: none;
 }
-
 .cdoor {
-	font-size: 75px; 
+	font-size: 80px; 
 	color: #b5615f;
 	position: absolute;
 }
 .odoor {
-	font-size: 75px; 
+	font-size: 80px; 
 	color: #b5615f;
 	position: absolute;
 }
-
 
 .spielvorstellung {
 	float: inline-start;
@@ -290,21 +273,30 @@
 }
 
 .spielstory {
-	/*
 	float: inline-start;
 	left:auto;
 	width:320px; 
 	height: 300px;
 	padding-right: 20px;
-	*/
+}
+.spielstory {
 	display: grid;
-  	padding: 2rem;
-  	grid-template-columns: 300px 1fr;
-  	gap: 1rem;
-  	align-items: center;
-  	max-width: 800px;
-  	margin: 0 auto;
-  	font: 500 100%/1.5 system-ui;
+	padding-top: 4.5rem;
+	padding-bottom: 20rem;
+	grid-template-columns: 300px 1fr;
+	gap: 1rem;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto;
+	font: 500 100%/1.5 system-ui;
+  
+  }
+  .text-reg{
+	margin: 150px 10px 10px 10px ;
+
+	padding: 10px;
+	/*width: 200px;  */ 
+	background-color: beige;
 }
 /* Frau */
 .regelImg0 {
@@ -373,8 +365,34 @@
 	height:400px; 
 	width:300px;
 }
+.footer{
+	margin: 10px;
+    padding: 10px;
+	background-color: beige;
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	max-width: 800px;
+	text-align: left;
+}
+.f-list {
+	margin: 10px;
+}
+.f-button {
+	text-align: right;
+}
+.footerEscape{
+	width: 50%;
+	margin: 0 auto;
+	text-align: right;
+	background: none;
+	border: none;
+}
 
-
+.door {
+	font-size: 50px; 
+	color: #b5615f;
+	position: absolute;
+}
 /* One Pager Animationen*/
 
 /* Beispiel HTML */
