@@ -11,7 +11,6 @@
   margin: 0 auto;
 }
 
-
 .firstBody {
   box-sizing: border-box;
   max-width: 800px;
@@ -60,27 +59,7 @@
   margin-left: 25%;
 
 }
-/*
-.spielstory {
-  display: grid;
-  padding: 2rem;
-  grid-template-columns: 300px 1fr;
-  gap: 1rem;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  font: 500 100%/1.5 system-ui;
 
-}
-*/
-/*
-.regelImg, .vorstellungImg{
-  max-width: 100%;
-  max-height: auto;
-}
-*/
-
-/*test*/
 .button {
 	width: 100%;
 	height: 150px;
@@ -111,20 +90,12 @@
 	border: none;
 }
 
-.cdoor {
-	font-size: 75px;
-	color: #b5615f;
-	position: relative;
-	top: -100px;
-}
-
 .odoor {
 	font-size: 75px;
 	color: #b5615f;
 	position: relative;
 	top: -100px;
 }
-
 
 .vorstellung {
 	width: 100%;
@@ -149,15 +120,6 @@
   	margin: 0 auto;
   	font: 500 100%/1.5 system-ui;
 }
-
-/*
-@keyframes imgmove{
-	0%   { transform: translate(0px,0px) rotate(0deg) }
-	33%  { transform: translate(70px,50px) rotate(120deg) }
-	66%  { transform: translate(140px,-50px) rotate(240deg) }
-	100% { transform: translate(200px,0px) rotate(359deg) }
-}
-*/
 
 .vorImg1 {
 	position: relative;
@@ -258,9 +220,6 @@
 }
 
 
-
-/* One Pager Animationen*/
-
 /* Beispiel HTML */
 .galleryHtml {
 	position: relative;
@@ -292,12 +251,10 @@
 	color: white;
 }
 
-
 .galleryHtml figure:nth-of-type(2) {
 	animation-delay: 10s;
 	opacity: 0;
 }
-
 
 /* Beispiel CSS */
 .galleryCss {
@@ -339,7 +296,6 @@
 	animation-delay: 10s;
 	opacity: 0;
 }
-
 
 /* Beispiel JS */
 .galleryJs {
@@ -392,17 +348,17 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     max-width: 800px;
-
 }
 .f-list {
     text-align: left;
     margin: 10px;
     font-weight: bold;
 }
+/*
 .f-button{
     text-align: right;
 }
-
+*/
 .footerEscape{
     width: 50%;
     background: none;
@@ -416,53 +372,3 @@
     position: absolute;
 }
 
-
-
-
-/* Smartphone: */
-/*
-@media only screen and (min-width: 375px) {
-
-
-
-	.p-5 {
-		max-width: 800px;
-		min-width: 375;
-
-	}
-	.mb-3 {
-	   margin-top: 50px;
-	   text-align: center;
-	  }
-	  .text-right, .text-left{
-		margin: 10px;
-		padding: 10px;
-	  }
-	  .h-img{
-		margin: auto;
-		max-width: 60%;
-		min-width: 60%;
-		max-height: 60%;
-		margin-top: 50px;
-		margin-left: 25%;
-
-	  }
-	  .spielstory {
-		display: grid;
-		padding: 2rem;
-		grid-template-columns: 300px 1fr;
-		gap: 1rem;
-		align-items: center;
-		max-width: 800px;
-		min-width: 375;
-		margin: 0 auto;
-		font: 500 100%/1.5 system-ui;
-
-	  }
-	  .regelImg, .vorstellungImg{
-		max-width: 50%;
-		max-height: auto;
-	  }
-
- }
-*/
