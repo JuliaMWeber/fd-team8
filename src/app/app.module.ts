@@ -27,7 +27,8 @@ const appRoutes: Routes=[
   {path: "rechts", component: ErRechtsComponent},
   {path: "links", component: ErLinksComponent},
   {path: '', redirectTo: '/start', pathMatch:'full'},
-  {path: 'endpage', component: EndpageComponent}
+  {path: 'endpage', component: EndpageComponent},
+  {path: 'quellen', component: QuellenComponent}
 ]
 @NgModule({
   declarations: [
