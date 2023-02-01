@@ -1,430 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-/*Animationen*/
-@keyframes glowing {
-  0% {
-    background-color: transparent;
-    box-shadow: 0 1px 5px #eeeeee;
-  }
-  50% {
-    background-color: transparent;
-    box-shadow: 0 0 20px #7ed06e;
-  }
-  100% {
-    background-color: transparent;
-    box-shadow: 0 0 5px #eeeeee;
-  }
-}
+@import "bootstrap";
+@import "css/animations.css";
+@import "css/escape-allg.css";
+@import "css/modals.css";
 
-@keyframes vibration {
-  0% {
-    transform: translate(0);
-  }
-
-  10% {
-    transform: translate(-2px, -2px);
-  }
-
-  20% {
-    transform: translate(2px, -2px);
-  }
-
-  30% {
-    transform: translate(-2px, 2px);
-  }
-
-  40% {
-    transform: translate(2px, 2px);
-  }
-
-  50% {
-    transform: translate(-2px, -2px);
-  }
-
-  60% {
-    transform: translate(2px, -2px);
-  }
-
-  70% {
-    transform: translate(-2px, 2px);
-  }
-
-  80% {
-    transform: translate(-2px, -2px);
-  }
-
-  90% {
-    transform: translate(2px, -2px);
-  }
-
-  100% {
-    transform: translate(0);
-  }
-}
-
-@keyframes lampenschein {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-
-@keyframes mausbewegung {
-  10% {
-    transform: translateX(57%)
-  }
-  25% {
-    transform: translateY(50%)
-  }
-  50% {
-    transform: translateX(-40%)
-  }
-  100% {
-    transform: translateY(-100%)
-  }
-}
-
-.frageElement:hover {
-  animation: glowing 13000ms infinite;
-}
-
-@keyframes imgmove {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes imgmove1 {
-  0% {
-    opacity: 0;
-    transform: scale(50%);
-  }
-  20% {
-    opacity: 1;
-    transform: scale(50%);
-  }
-  40% {
-    opacity: 1;
-    transform: scale(50%);
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes entenfenster {
-
-  0% {
-    opacity: 0;
-  }
-  49% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 1
-  }
-  100% {
-    opacity: 0;
-  }
-
-}
-
-@keyframes druckerHover {
-
-  0%, 9% {
-    opacity: 0;
-  }
-  10%, 19% {
-    opacity: 1;
-  }
-  20%, 29% {
-    opacity: 0;
-  }
-  30%, 39% {
-    opacity: 1;
-  }
-  40%, 49% {
-    opacity: 0;
-  }
-  50%, 59% {
-    opacity: 1;
-  }
-  60%, 69% {
-    opacity: 0;
-  }
-  70%, 79% {
-    opacity: 1;
-  }
-  80%, 89% {
-    opacity: 0;
-  }
-  90%,
-  99% {
-    opacity: 1
-  }
-  100% {
-    opacity: 0;
-  }
-
-}
-
-@keyframes druckerUnhover {
-
-  0%, 9% {
-    opacity: 1;
-  }
-  10%, 19% {
-    opacity: 0;
-  }
-  20%, 29% {
-    opacity: 1;
-  }
-  30%, 39% {
-    opacity: 0;
-  }
-  40%, 49% {
-    opacity: 1;
-  }
-  50%, 59% {
-    opacity: 0;
-  }
-  60%, 69% {
-    opacity: 1;
-  }
-  70%, 79% {
-    opacity: 0;
-  }
-  80%, 89% {
-    opacity: 1;
-  }
-  90%,
-  99% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1;
-  }
-
-}
-
-/* Allgemeines für Escape-Room*/
-
-.lampe {
-  height: 30%;
-  width: 10%;
-  position: absolute;
-  left: 50%;
-  top: 7%;
-  transform: translate(-50%, -50%);
-}
-
-.lampenschein {
-  height: 30%;
-  width: 15.5%;
-  position: absolute;
-  left: 50.1%;
-  top: 49%;
-  transform: translate(-50%, -50%);
-  animation: lampenschein 13000ms infinite;
-  animation-direction: alternate;
-}
-
-.mobiliar-btn {
-  /*background-color: Transparent;
-  border: none; */
-
-}
-
-.esc-img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: -50%;
-  transform: translate(50%, -50%);
-}
-
-.raum {
-  background-size: cover;
-  background: url("src/assets/images/raum.png") no-repeat fixed 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-}
-
-.escape-nav-btn {
-  display: flex;
-  justify-content: space-between;
-  padding: 1%;
-}
-
-.escape-nav-btn-l {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1%;
-}
-
-#counterMitte, #counterRechts, #counterLinks {
-  text-align: center;
-  width: 5%;
-  position: absolute;
-  left: 90%;
-  top: 90%;
-  padding: 10px;
-  background-color: #ff0000;
-}
-
-
-#valbtnMitte, #valbtnRechts, #valbtnLinks {
-  font-size: 90%;
-  text-align: center;
-  width: 10%;
-  height: 4%;
-  position: absolute;
-  left: 79%;
-  top: 90%;
-  padding: 1px;
-}
-
-
-/* Modals */
-.modal-body {
-  background-color: #bad793;
-}
-
-.modal-header {
-  background-color: #b0d492;
-}
-
-.modal-footer {
-  background-color: #ffffff;
-}
-
-.buttonAnimateNav {
-  color: #283a1e;
-  font-size: 20px;
-  background-color: #7ed06e;
-  text-align: center;
-  display: block;
-  position: relative;
-  padding: 5px;
-  width: 5%;
-  height: 20%;
-
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0 1px 0 #283a1e;
-  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
-
-  -webkit-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  -moz-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.buttonAnimateNav:active {
-  top: 10px;
-  background-color: #466e3c;
-
-  -webkit-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  -moz-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-}
-
-.buttonAnimateNav:disabled {
-  background-color: grey;
-}
-
-.buttonAnimateNav:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  padding: 4px;
-  position: absolute;
-  bottom: -15px;
-  left: -4px;
-  z-index: -1;
-  background-color: #466e3c;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.buttonAnimate {
-  color: #283a1e;
-  font-size: 20px;
-  background-color: #7ed06e;
-  text-align: center;
-  display: block;
-  position: relative;
-  padding: 5px;
-  width: 30%;
-  height: 20%;
-
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0 1px 0 #283a1e;
-  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
-
-  -webkit-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  -moz-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-  box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.buttonAnimate:active {
-  top: 10px;
-  background-color: #466e3c;
-
-  -webkit-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  -moz-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-  box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
-}
-
-.buttonAnimate:disabled {
-  background-color: grey;
-}
-
-.buttonAnimate:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  padding: 4px;
-  position: absolute;
-  bottom: -15px;
-  left: -4px;
-  z-index: -1;
-  background-color: #466e3c;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-
+/*OnePager*/
 .navbar {
   max-width: 800px;
   text-align: center;
@@ -432,15 +12,15 @@
 }
 
 
-/* One Pager */
 .firstBody {
   box-sizing: border-box;
   max-width: 800px;
   text-align: left;
   margin: 0 auto;
+  padding: 10px;
 }
 
-.oneBg {
+.oneBg{
   background-position-y: top;
   background-image: url("assets/images/er-rechts/pyramidenregal.png");
   background-position: center;
@@ -449,8 +29,12 @@
   background-attachment: fixed;
 }
 
+.erklaerung-inner {
+	background-color: #b2e996;
+}
+
 .p-5 {
-  background-color: beige;
+  background-color: #b2e996;
   display: grid;
   grid-template-columns: min-content 1fr;
   max-width: 800px;
@@ -459,25 +43,23 @@
 }
 
 .mb-3 {
-  margin-top: 50px;
-  text-align: center;
+ margin-top: 50px;
+ text-align: center;
 }
 
-.text-right, .text-left {
-  margin: 10px;
+.text-right, .text-left{
   padding: 10px;
   /*width: 200px;  */
-  background-color: beige;
+  background-color: #b2e996
 }
 
-.h-img {
+.h-img{
   max-width: 60%;
   max-height: 60%;
   margin-top: 50px;
   margin-left: 25%;
 
 }
-
 /*
 .spielstory {
   display: grid;
@@ -499,42 +81,71 @@
 */
 
 /*test*/
-.buttonEscape {
-  width: 100%;
-  text-align: center;
-  background: none;
-  border: none;
+.button {
+	width: 100%;
+	height: 150px;
+}
+
+.button-bg {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(255, 255, 255);
+	opacity: 0.7;;
+}
+
+.erklärung {
+	width: 100%;
+}
+
+.text-right {
+	/*text-align: justify;*/
+	margin: 1em auto;
+}
+
+.buttonEscape{
+	width: 100%;
+	text-align: center;
+	background: none;
+	border: none;
 }
 
 .cdoor {
-  font-size: 75px;
-  color: #b5615f;
-  position: absolute;
+	font-size: 75px;
+	color: #b5615f;
+	position: relative;
+	top: -100px;
 }
 
 .odoor {
-  font-size: 75px;
-  color: #b5615f;
-  position: absolute;
+	font-size: 75px;
+	color: #b5615f;
+	position: relative;
+	top: -100px;
 }
 
 
-.spielvorstellung {
-  float: start;
-  left: auto;
-  width: 320px;
-  height: 300px;
-  padding-right: 20px;
+.vorstellung {
+	width: 100%;
 }
 
-.vorImg1 {
-  position: relative;
-  left: -90px;
-  top: -350px;
-  height: 50px;
-  width: 50px;
+.spielvorstellung-image {
+	float: left;
+	left:0;
+	width:320px;
+	height: 320px;
+	padding: 20px;
+	margin-right: 40px;
+}
 
-  animation: imgmove 5s forwards infinite linear;
+.spielstory {
+	display: grid;
+  	padding: 2rem;
+  	grid-template-columns: 300px 1fr;
+  	gap: 1rem;
+  	align-items: center;
+  	max-width: 800px;
+  	margin: 0 auto;
+  	font: 500 100%/1.5 system-ui;
 }
 
 /*
@@ -546,240 +157,264 @@
 }
 */
 
+.vorImg1 {
+	position: relative;
+	left:-90px;
+	top:-350px;
+	height:50px;
+	width:50px;
+
+	animation: imgmove 5s forwards infinite linear;
+}
 .vorImg2 {
-  position: relative;
-  left: 80px;
-  top: -350px;
-  height: 50px;
-  width: 50px;
+	position: relative;
+	left:80px;
+	top:-350px;
+	height:50px;
+	width:50px;
 
-  animation: imgmove 5s forwards infinite linear
+	animation: imgmove 5s forwards infinite linear
 
 }
-
 .vorImg3 {
-  position: relative;
-  left: 100px;
-  top: -230px;
-  height: 200px;
-  width: 100px;
+	position: relative;
+	left:100px;
+	top:-230px;
+	height:200px;
+	width:100px;
 }
-
 .vorImg4 {
-  position: relative;
-  left: 0;
-  top: 0;
-  height: 300px;
-  width: 300px;
+	position: relative;
+	left:0px;
+	top:0px;
+	height:300px;
+	width:300px;
 }
 
-.spielstory {
-  /*
-  float: inline-start;
-  left:auto;
-  width:320px;
-  height: 300px;
-  padding-right: 20px;
-  */
-  display: grid;
-  padding: 2rem;
-  grid-template-columns: 300px 1fr;
-  gap: 1rem;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  font: 500 100%/1.5 system-ui;
+.spielregeln {
+	width: 100%;
 }
 
-.regelBild {
-  position: absolute;
-  width: 100px;
-  height: 10%;
+.spielregeln-text{
+	min-height: 320px;
 }
 
+.spielregeln-image {
+	float: right;
+	left:0;
+	width:320px;
+	height: 320px;
+	padding: 20px;
+	margin-right: 20px;
+}
 /* Frau */
 .regelImg0 {
-  position: absolute;
-  left: 200px;
-  top: -530px;
-  height: 200px;
-  width: 100px;
+	position: relative;
+	left: 105px;
+	top: -850px;
+	height: 200px;
+	width: 100px;
+	z-index: 1000;
 }
-
+/* Fragezeichen Hintergrund 1 */
 .regelImg1 {
-  position: absolute;
-  left: -250px;
-  top: -500px;
-  height: 100px;
-  width: 100px;
-
-  animation: imgmove1 5s forwards infinite linear;
-  animation-delay: 10s;
-
+	position:relative;
+	left: 30px;
+	top: -675px;
+	height: 265px;
+	width: 260px;
+	animation: imgmove1 5s forwards infinite linear;
+	animation-delay: 10s;
+	/*z-index: 1000;*/
 }
-
 .regelImg2 {
-  position: relative;
-  left: 0;
-  top: -430px;
-  /*height:250px;
-  width:250px;*/
-  height: 200px;
-  width: 220px;
-
-  animation: imgmove1 5s forwards infinite linear
+	position:relative;
+	left:0px;
+	top: -470px;
+	height: 180px;
+	width: 295px;
+	animation: imgmove2 5s forwards infinite linear;
+	animation-delay: 10s;
+	/*z-index: 1000;*/
 }
-
 /* rotes Fragezeichen*/
 .regelImg3 {
-  position: relative;
-  left: -250px;
-  height: 200px;
-  width: 150px;
-
-  animation: vibration 5s forwards infinite linear;
-
+	position:relative;
+	left: 70px;
+	top: -240px;
+	height: 200px;
+	width: 150px;
+	animation: vibration 5s forwards infinite linear;
 }
-
 /* Blume */
 .regelImg4 {
-  position: relative;
-  left: 0;
-  top: -75px;
-  height: 400px;
-  width: 300px;
+	position:relative;
+	left: 0px;
+	top: 0px;
+	height: 300px;
+	width: 300px;
 }
+
 
 
 /* One Pager Animationen*/
 
 /* Beispiel HTML */
 .galleryHtml {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryHtml figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: imgmove 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: wechseln 15s infinite;
 }
 
 .galleryHtml figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryHtml > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
 }
 
 
 .galleryHtml figure:nth-of-type(2) {
-  animation-delay: 10s;
-  opacity: 0;
-}
-
-/*
-.galleryHtml figure:nth-of-type(3) {
 	animation-delay: 10s;
 	opacity: 0;
 }
-*/
 
 
 /* Beispiel CSS */
 .galleryCss {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryCss figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: imgmove 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: imgmove 15s infinite;
 }
 
 .galleryCss figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryCss > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
 }
 
 .galleryCss figure:nth-of-type(2) {
-  animation-delay: 5s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
 
 .galleryCss figure:nth-of-type(3) {
-  animation-delay: 10s;
-  opacity: 0;
+	animation-delay: 10s;
+	opacity: 0;
 }
 
 
 /* Beispiel JS */
 .galleryJs {
-  position: relative;
-  margin: 0;
-  background: none;
-  border: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: none;
 }
 
 .galleryJs figure {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 2em;
-  z-index: 1;
-  animation: imgmove 15s infinite;
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 2em;
+	z-index: 1;
+	animation: imgmove 15s infinite;
 }
 
 .galleryJs figure:last-of-type {
-  position: relative;
+	position: relative;
 }
 
 .galleryJs > figure figcaption {
-  position: absolute;
-  left: 1em;
-  font-size: 2em;
-  font-weight: bold;
-  bottom: 0.5em;
-  z-index: 2;
-  color: white;
+	position: absolute;
+	left: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	bottom: 0.5em;
+	z-index: 2;
+	color: white;
 }
 
 .galleryJs figure:nth-of-type(2) {
-  animation-delay: 5s;
-  opacity: 0;
+	animation-delay: 5s;
+	opacity: 0;
 }
 
 .galleryJs figure:nth-of-type(3) {
-  animation-delay: 10s;
-  opacity: 0;
+	animation-delay: 10s;
+	opacity: 0;
 }
+
+
+/* Footer*/
+.footer{
+    margin: 10px;
+    padding: 10px;
+    background-color: #b2e996;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 800px;
+
+}
+.f-list {
+    text-align: left;
+    margin: 10px;
+    font-weight: bold;
+}
+.f-button{
+    text-align: right;
+}
+
+.footerEscape{
+    width: 50%;
+    background: none;
+    border: none;
+}
+
+.door {
+    margin-left: 250px;
+    font-size: 80px;
+    color: #b5615f;
+    position: absolute;
+}
+
+
 
 
 /* Smartphone: */
