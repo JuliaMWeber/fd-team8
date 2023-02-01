@@ -232,8 +232,8 @@
   height: 30%;
   width: 10%;
   position: absolute;
-  left: 47.2%;
-  top: 22%;
+  left: 42.25%;
+  top: 7%;
   transform: translate(-50%, -50%);
 }
 
@@ -244,7 +244,7 @@
   left: 44.6%;
   top: 49%;
   transform: translate(-50%, -50%);
-  animation: lampenschein 13000ms infinite;
+ animation: lampenschein 13000ms infinite;
   animation-direction: alternate;
 }
 

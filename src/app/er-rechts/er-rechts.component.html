@@ -3,15 +3,15 @@
     <button routerLink="/escape" class="buttonAnimateNav">&#5130;</button>
   </div>
   <div class="fenster">
-    <button class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#fensterModal">
+    <button id="fensterButton" class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#fensterModal">
       <img class="frageElement esc-img fensterUnhover" src="../../assets/images/er-rechts/fensterMitEnte1.png">
       <img class="frageElement esc-img fensterHover" src="../../assets/images/er-rechts/fensterMitEnte6.png">
     </button>
   </div>
   <div>
-    <div class="mobiliar-btn lampe" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
+    <button id="lampenButtonRechts" class="mobiliar-btn lampe" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
       class="frageElement lampeImg esc-img" src="assets/images/lampe.png">
-    </div>
+    </button>
   </div>
 
   <div class="lampenschein">
@@ -23,29 +23,33 @@
   </div>
 
 
-
   <div>
-    <div class="mobiliar-btn pyramidenRegal" data-bs-toggle="modal" data-bs-target="#pyramidenRegalModal"><img
+    <button id="pyramidenRegalButton" class="mobiliar-btn pyramidenRegal" data-bs-toggle="modal"
+            data-bs-target="#pyramidenRegalModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/pyramideOhneWecker.png">
-    </div>
+    </button>
   </div>
 
   <div class="pyramidenWecker">
-    <img class="frageElement esc-img" src="../../assets/images/er-rechts/pyramidenwecker.png">
+    <button id="pyramidenWeckerButton" class="mobiliar-btn" data-bs-toggle="modal"
+            data-bs-target="#pyramidenWeckerModal"><img class="frageElement esc-img"
+                                                        src="../../assets/images/er-rechts/pyramidenwecker.png">
+    </button>
   </div>
+
   <div>
-    <div class="mobiliar-btn kommode" data-bs-toggle="modal" data-bs-target="#kommodenModal"><img
+    <button id="kommodenButton" class="mobiliar-btn kommode" data-bs-toggle="modal" data-bs-target="#kommodenModal"><img
       class="frageElement esc-img" src="../../assets/images/er-rechts/kommode.png">
-    </div>
+    </button>
   </div>
   <div class="druckerRegal">
-    <img class="frageElement esc-img" src="../../assets/images/er-rechts/druckerRegal.png">
+    <img class="esc-img" src="../../assets/images/er-rechts/druckerRegal.png">
 
     <div class="drucker">
-      <div class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#druckerModal">
+      <button id="druckerButton" class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#druckerModal">
         <img class="frageElement esc-img druckerUnhover" src="../../assets/images/er-rechts/druckerUnhover.png">
         <img class="frageElement esc-img druckerHover" src="../../assets/images/er-rechts/druckerHovered.png">
-      </div>
+      </button>
     </div>
   </div>
 </div>
@@ -56,7 +60,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Frage1">Frage 1</h5>
+        <h5 class="modal-title" id="Frage12">Frage 12</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -87,7 +91,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Frage2">Frage 2</h5>
+        <h5 class="modal-title" id="Frage13">Frage 13</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -112,7 +116,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Frage3">Frage 3</h5>
+        <h5 class="modal-title" id="Frage14">Frage 14</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -137,7 +141,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Frage4">Frage 4</h5>
+        <h5 class="modal-title" id="Frage15">Frage 15</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -164,7 +168,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Frage 5</h5>
+        <h5 class="modal-title" id="Frage16">Frage 16</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -190,7 +194,38 @@
   </div>
 </div>
 
+<div class="modal fade" id="pyramidenWeckerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage17">Frage 17</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> Wozu nutzt man CSS? </h5>
+          <input type="radio" name="cssFunktionFrage">
+          <label>Formularbewertung</label><br>
+          <input type="radio" name="cssFunktionFrage">
+          <label>Strukturierung</label><br>
+          <input type="radio" name="cssFunktionFrage" id="richtigCssFunktion">
+          <label>Grafische Gestaltung</label><br>
+          <input type="radio" name="cssFunktionFrage">
+          <label>Backendkommunikation</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('cssFunktionFrage', 'richtigCssFunktion', 'pyramidenWeckerButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
-  document.getElementById('counterValueRechts').innerHTML=counterVal;
+  document.getElementById('counterValueRechts').innerHTML = counterVal;
 </script>
 

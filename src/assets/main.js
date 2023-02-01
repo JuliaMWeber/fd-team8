@@ -34,11 +34,12 @@ function counterValUebergabe() {
 
   if (linkerVal < rechterVal) {
     linkerVal = rechterVal;
-    return linkerVal
+    return linkerVal;
   } else if (linkerVal < mittlererVal) {
     linkerVal = mittlererVal;
     return linkerVal
   }
+
   if (rechterVal < linkerVal) {
     rechterVal = linkerVal;
     return rechterVal
@@ -46,6 +47,7 @@ function counterValUebergabe() {
     rechterVal = mittlererVal;
     return rechterVal
   }
+
   if (mittlererVal < rechterVal) {
     mittlererVal = rechterVal
     return mittlererVal
