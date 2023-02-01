@@ -11,4 +11,5 @@ library.add(faDoorClosed,faDoorOpen);
 })
 export class FooterComponent {
     faDoorOpen = faDoorOpen;
+    faDoorClosed = faDoorClosed;
 }

@@ -113,7 +113,7 @@
 }
 
 .navbar {
-  max-width: 800px;
+  /*max-width: 800px;*/
   text-align: center;
   margin: 0 auto;
 }
@@ -123,6 +123,7 @@
   max-width: 800px;
   text-align: left;
   margin: 0 auto;
+  padding: 10px;
 }
 .oneBg{
   background-position-y: top;
@@ -133,11 +134,14 @@
   background-attachment: fixed;
 }
 
+.erklaerung-inner {
+	background-color: #b2e996;
+}
 
 /* One Pager */
 
 .p-5 {
-  background-color: beige;
+  background-color: #b2e996;
   display: grid;
   grid-template-columns: min-content 1fr;
   max-width: 800px;
@@ -149,10 +153,9 @@
  text-align: center;
 }
 .text-right, .text-left{
-  margin: 10px;
   padding: 10px;
   /*width: 200px;  */ 
-  background-color: beige;
+  background-color: #b2e996
 }
 .h-img{
   max-width: 60%;
@@ -182,6 +185,25 @@
 */
 
 /*test*/
+.button {
+	width: 100%;
+	height: 150px;
+}
+.button-bg {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(255, 255, 255);
+	opacity: 0.7;;
+}
+.erklärung {
+	width: 100%;
+}
+
+.text-right {
+	/*text-align: justify;*/
+	margin: 1em auto;
+}
+
 .buttonEscape{
 	width: 100%;
 	text-align: center;
@@ -192,30 +214,38 @@
 .cdoor {
 	font-size: 75px; 
 	color: #b5615f;
-	position: absolute;
+	position: relative;
+	top: -100px;
 }
 .odoor {
 	font-size: 75px; 
 	color: #b5615f;
-	position: absolute;
+	position: relative;
+	top: -100px;
 }
 
 
-.spielvorstellung {
-	float: inline-start;
-	left:auto;
+.vorstellung {
+	width: 100%;
+}
+.spielvorstellung-image {
+	float: left;
+	left:0;
 	width:320px; 
-	height: 300px;
-	padding-right: 20px;
+	height: 320px;
+	padding: 20px;
+	margin-right: 40px;
 }
-.vorImg1 {
-	position: relative; 
-	left:-90px; 
-	top:-350px; 
-	height:50px; 
-	width:50px;
 
-	animation: imgmove 5s forwards infinite linear
+.spielstory {
+	display: grid;
+  	padding: 2rem;
+  	grid-template-columns: 300px 1fr;
+  	gap: 1rem;
+  	align-items: center;
+  	max-width: 800px;
+  	margin: 0 auto;
+  	font: 500 100%/1.5 system-ui;
 }
 
 /*
@@ -243,6 +273,15 @@
 		opacity: 0;
 	}
 }
+.vorImg1 {
+	position: relative; 
+	left:-90px; 
+	top:-350px; 
+	height:50px; 
+	width:50px;
+
+	animation: imgmove 5s forwards infinite linear;
+}
 .vorImg2 {
 	position: relative; 
 	left:80px; 
@@ -268,86 +307,117 @@
 	width:300px;
 }
 
-.spielstory {
-	/*
-	float: inline-start;
-	left:auto;
+.spielregeln {
+	width: 100%;
+}
+
+.spielregeln-text{
+	min-height: 320px;
+}
+
+.spielregeln-image {
+	float: right;
+	left:0;
 	width:320px; 
-	height: 300px;
-	padding-right: 20px;
-	*/
-	display: grid;
-  	padding: 2rem;
-  	grid-template-columns: 300px 1fr;
-  	gap: 1rem;
-  	align-items: center;
-  	max-width: 800px;
-  	margin: 0 auto;
-  	font: 500 100%/1.5 system-ui;
+	height: 320px;
+	padding: 20px;
+	margin-right: 20px;
 }
 /* Frau */
 .regelImg0 {
 	position: relative; 
-	left: 200px; 
-	top:-580px; 
-	height:200px; 
-	width:100px;
+	left: 105px; 
+	top: -850px; 
+	height: 200px; 
+	width: 100px;
+	z-index: 1000;
 }
+/* Fragezeichen Hintergrund 1 */
 .regelImg1 {
 	position:relative; 
-	left:-250px; 
-	top: -500px;
-	height:100px; 
-	width:100px;
-
-	animation: imgmove1 5s forwards infinite linear
+	left: 30px; 
+	top: -675px;
+	height: 265px; 
+	width: 260px;
+	animation: imgmove1 5s forwards infinite linear;
+	animation-delay: 10s;
+	/*z-index: 1000;*/
 }
 .regelImg2 {
 	position:relative; 
 	left:0px; 
-	top:-430px; 
-	/*height:250px; 
-	width:250px;*/
-	height:200px; width:220px;
-
-	animation: imgmove1 5s forwards infinite linear
+	top: -470px; 
+	height: 180px; 
+	width: 295px;
+	animation: imgmove2 5s forwards infinite linear;
+	animation-delay: 10s;
+	/*z-index: 1000;*/
 }
+/* rotes Fragezeichen*/
+.regelImg3 {
+	position:relative; 
+	left: 70px;
+	top: -240px; 
+	height: 200px; 
+	width: 150px;
+	animation: vibration 5s forwards infinite linear;	
+}
+/* Blume */
+.regelImg4 {
+	position:relative; 
+	left: 0px;
+	top: 0px;
+	height: 300px; 
+	width: 300px;
+}
+
 @keyframes imgmove1 {
 	0% {
-		opacity: 0;
+		opacity: 1;
+		transform: scale(100%);
 	}
 	20% {
-		opacity: 1;
+		opacity: 0;
+		transform: scale(95%);
 	}
 	40% {
 		opacity: 1;
+		transform: scale(100%);
 	}
 	60% {
 		opacity: 0;
 	}
 	100% {
-		opacity: 0;
+		opacity: 1;
 	}
 }
-/* rotes Fragezeichen*/
-.regelImg3 {
-	position:relative; 
-	left:-250px; 
-	height:200px; 
-	width:150px;
-}
-/* Blume */
-.regelImg4 {
-	position:relative; 
-	left:0px;
-	top:-75px;
-	height:400px; 
-	width:300px;
-}
 
+@keyframes imgmove2 {
+	0% {
+		opacity: 0;
+		transform: scale(100%);
+	}
+	20% {
+		opacity: 1;
+		transform: scale(95%);
+	}
+	40% {
+		opacity: 0;
+		transform: scale(100%);
+	}
+	60% {
+		opacity: 1;
+		transform: scale(95%);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(100%);
+	}
+}
 
 /* One Pager Animationen*/
 
+/* Beispiel HTML */
 .galleryHtml {
 	position: relative;
 	margin: 0;
@@ -397,18 +467,12 @@
 }
 
 .galleryHtml figure:nth-of-type(2) {
-	animation-delay: 5s;
-	opacity: 0;
-}
-/*
-.galleryHtml figure:nth-of-type(3) {
 	animation-delay: 10s;
 	opacity: 0;
 }
-*/
 
 
-
+/* Beispiel CSS */
 .galleryCss {
 	position: relative;
 	margin: 0;
@@ -461,12 +525,14 @@
 	animation-delay: 5s;
 	opacity: 0;
 }
-/*
+
 .galleryCss figure:nth-of-type(3) {
 	animation-delay: 10s;
 	opacity: 0;
 }
-*/
+
+
+/* Beispiel JS */
 .galleryJs {
 	position: relative;
 	margin: 0;
@@ -524,6 +590,42 @@
 	animation-delay: 10s;
 	opacity: 0;
 }
+
+
+/* Footer*/
+.footer{
+    margin: 10px;
+    padding: 10px;
+    background-color: #b2e996;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 800px;
+
+}
+.f-list {
+    text-align: left;
+    margin: 10px;
+    font-weight: bold;
+}
+.f-button{
+    text-align: right;
+}
+
+.footerEscape{
+    width: 50%;
+    background: none;
+    border: none;
+}
+
+.door {
+    margin-left: 250px;
+    font-size: 80px; 
+    color: #b5615f;
+    position: absolute;
+}
+
+
 
 
 /* Smartphone: */

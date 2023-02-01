@@ -6,11 +6,24 @@
 <div class="firstBody">
     <app-header></app-header>
     <div class="oneBg">
-      <app-vorstellung></app-vorstellung>
-      <app-spielregeln></app-spielregeln>      
-      <app-erklaerung></app-erklaerung>
-      <button class="buttonEscape" routerLink="/escape">
-        <fa-icon class="odoor" [icon] ="faDoorOpen"  animation="bounce"></fa-icon>
-      </button>
+      <div class="vorstellung">
+        <app-vorstellung></app-vorstellung>
+      </div>
+      <div class="spielregeln">
+        <app-spielregeln></app-spielregeln> 
+      </div>
+      <div class="button">
+        <button class="buttonEscape" routerLink="/escape">
+          <div class="button-bg">&nbsp;</div>
+          <fa-icon class="odoor" [icon] ="faDoorOpen"  animation="bounce"></fa-icon>
+        </button>
+      </div>
+      <div class="erklaerung">
+        <app-erklaerung></app-erklaerung>
+      </div>
+      <div class="footer">
+        <app-footer></app-footer>
+      </div>
+      
     </div>
 </div>
