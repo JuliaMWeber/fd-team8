@@ -1,0 +1,19 @@
+.q-list {
+    box-sizing: border-box;
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+.q-link-home, .q-link-room {
+    background-color: #b2e996;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    
+}
