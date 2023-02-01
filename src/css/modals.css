@@ -1,0 +1,116 @@
+/* Modals */
+.modal-body {
+  background-color: #bad793;
+}
+
+.modal-header {
+  background-color: #b0d492;
+}
+
+.modal-footer {
+  background-color: #b0d492;
+}
+
+.buttonAnimateNav {
+  color: #283a1e;
+  font-size: 20px;
+  background-color: #7ed06e;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 5px;
+  width: 5%;
+  height: 20%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 1px 0 #283a1e;
+  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  -moz-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buttonAnimateNav:active {
+  top: 10px;
+  background-color: #466e3c;
+
+  -webkit-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  -moz-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+}
+
+.buttonAnimateNav:disabled {
+  background-color: grey;
+}
+
+.buttonAnimateNav:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #466e3c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buttonAnimate {
+  color: #283a1e;
+  font-size: 20px;
+  background-color: #7ed06e;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 5px;
+  width: 30%;
+  height: 20%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 1px 0 #283a1e;
+  filter: dropshadow(color=#283a1e, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  -moz-box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+  box-shadow: inset 0 1px 0 #b0d492, 0 10px 0 #6aa95c;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buttonAnimate:active {
+  top: 10px;
+  background-color: #466e3c;
+
+  -webkit-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  -moz-box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+  box-shadow: inset 0 1px 0 #7ed06e, inset 0 -3px 0 #3f6235;
+}
+
+.buttonAnimate:disabled {
+  background-color: grey;
+}
+
+.buttonAnimate:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #466e3c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

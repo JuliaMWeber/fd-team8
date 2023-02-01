@@ -1,0 +1,67 @@
+/* Allgemeines für Escape-Room*/
+
+.lampe {
+  height: 30%;
+  width: 10%;
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%, -50%);
+}
+
+.lampenschein {
+  height: 30%;
+  width: 15.5%;
+  position: absolute;
+  left: 50.1%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  animation: lampenschein 13000ms infinite;
+  animation-direction: alternate;
+}
+
+.mobiliar-btn {
+  background-color: Transparent;
+  border: none;
+
+}
+
+.esc-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: -50%;
+  transform: translate(50%, -50%);
+}
+
+.raum {
+  background-size: cover;
+  background: url("src/assets/images/raum.png") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.escape-nav-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.escape-nav-btn-l {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
+#counterMitte, #counterRechts, #counterLinks {
+  text-align: center;
+  width: 5%;
+  position: absolute;
+  left: 90%;
+  top: 90%;
+  padding: 10px;
+  background-color: #ff0000;
+}
