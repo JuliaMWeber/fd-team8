@@ -52,12 +52,12 @@
   background-color: #b2e996
 }
 
+
 .h-img{
   max-width: 60%;
   max-height: 60%;
   margin-top: 50px;
   margin-left: 25%;
-
 }
 
 .button {
@@ -77,10 +77,12 @@
 .erklärung {
 	width: 100%;
 }
-
 .text-right {
-	/*text-align: justify;*/
+	text-align: justify;
 	margin: 1em auto;
+}
+.text-left {
+	text-align: justify;
 }
 
 .buttonEscape{
@@ -341,8 +343,8 @@
 
 /* Footer*/
 .footer{
-    margin: 10px;
-    padding: 10px;
+	margin-top: 50px;
+	width: 100%;
     background-color: #b2e996;
     display: flex;
     justify-content: space-between;
@@ -353,6 +355,12 @@
     text-align: left;
     margin: 10px;
     font-weight: bold;
+}
+.f-img{
+	max-width: 60%;
+	max-height: 60%;
+	margin-top: 50px;
+	margin-left: 25%;
 }
 /*
 .f-button{
@@ -365,10 +373,5 @@
     border: none;
 }
 
-.door {
-    margin-left: 250px;
-    font-size: 80px;
-    color: #b5615f;
-    position: absolute;
-}
+
 
