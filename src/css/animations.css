@@ -102,6 +102,26 @@
   }
 }
 
+@keyframes wechseln {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
 @keyframes entenfenster {
 
   0% {
