@@ -1,0 +1,231 @@
+<div class="raum fullHeight" onmousemove="updateDisplayRechts(counterVal)">
+  <div class="escape-nav-btn fullHeight">
+    <button routerLink="/escape" class="buttonAnimateNav">&#5130;</button>
+  </div>
+  <div class="fenster">
+    <button id="fensterButton" class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#fensterModal">
+      <img class="frageElement esc-img fensterUnhover" src="../../assets/images/er-rechts/fensterMitEnte1.png">
+      <img class="frageElement esc-img fensterHover" src="../../assets/images/er-rechts/fensterMitEnte6.png">
+    </button>
+  </div>
+  <div>
+    <button id="lampenButtonRechts" class="mobiliar-btn lampe" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
+      class="frageElement lampeImg esc-img" src="assets/images/lampe.png">
+    </button>
+  </div>
+
+  <div class="lampenschein">
+    <img class="frageElement esc-img" src="assets/images/Lampenschein.png">
+  </div>
+
+  <div id="counterRechts">
+    <div id="counterValueRechts">0</div>
+  </div>
+
+
+  <div>
+    <button id="pyramidenRegalButton" class="mobiliar-btn pyramidenRegal" data-bs-toggle="modal"
+            data-bs-target="#pyramidenRegalModal"><img
+      class="frageElement esc-img" src="../../assets/images/er-rechts/pyramideOhneWecker.png">
+    </button>
+  </div>
+
+  <div class="pyramidenWecker">
+    <button id="pyramidenWeckerButton" class="mobiliar-btn" data-bs-toggle="modal"
+            data-bs-target="#pyramidenWeckerModal"><img class="frageElement esc-img"
+                                                        src="../../assets/images/er-rechts/pyramidenwecker.png">
+    </button>
+  </div>
+
+  <div>
+    <button id="kommodenButton" class="mobiliar-btn kommode" data-bs-toggle="modal" data-bs-target="#kommodenModal"><img
+      class="frageElement esc-img" src="../../assets/images/er-rechts/kommode.png">
+    </button>
+  </div>
+  <div class="druckerRegal">
+    <img class="esc-img" src="../../assets/images/er-rechts/druckerRegal.png">
+
+    <div class="drucker">
+      <button id="druckerButton" class="mobiliar-btn" data-bs-toggle="modal" data-bs-target="#druckerModal">
+        <img class="frageElement esc-img druckerUnhover" src="../../assets/images/er-rechts/druckerUnhover.png">
+        <img class="frageElement esc-img druckerHover" src="../../assets/images/er-rechts/druckerHovered.png">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!--- Modals  --->
+<div class="modal fade" id="lampenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage12">Frage 12</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h2> Welche Konvention gibt es wirklich? </h2>
+          <input type="radio" name="konventionsFrage">
+          <label>Variablen sollte mit einem Großbuchstaben beginnen</label><br>
+          <input type="radio" name="konventionsFrage">
+          <label>Variablen sind immer in CAPSLOCK geschrieben</label><br>
+          <input type="radio" name="konventionsFrage" id="richtigKonvention">
+          <label>Variablen sind immer komplett klein geschrieben</label><br>
+          <input type="radio" name="konventionsFrage">
+          <label>Variablen sind immer in Englisch geschrieben</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('konventionsFrage', 'richtigKonvention', 'lampenButtonRechts')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fensterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage13">Frage 13</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Wie nennt man diesen Selektor? -> #inhalt </h5>
+        <input type="radio" id="richtigInhaltSelektor" name="inhaltFrage">
+        <label>Selektiert alle Elemente mit der id 'inhalt'</label><br>
+        <input type="radio" name="inhaltFrage">
+        <label>Selektiert alle Elemente mit der Klasse 'inhalt'</label><br>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('inhaltFrage', 'richtigInhaltSelektor', 'fensterButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="pyramidenRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage14">Frage 14</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5> Guter Code sollte ... </h5>
+        <input type="radio" id="richtigGuterCode" name="guterCodeFrage" value="p">
+        <label>... lesbar & verständlich sein</label><br>
+        <input type="radio" class="falsch" name="guterCodeFrage" value="div">
+        <label>... einfach nur funktionieren</label><br>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('guterCodeFrage', 'richtigGuterCode', 'pyramidenRegalButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kommodenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage15">Frage 15</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> In JavaScript muss ich Datentypen explizit angeben</h5>
+          <input type="radio" class="wahr" name="datentypFrage" value="p">
+          <label>Wahr</label><br>
+          <input type="radio" id="richtigDatentyp" name="datentypFrage" value="div">
+          <label>Falsch</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('datentypFrage', 'richtigDatentyp', 'kommodenButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="druckerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage16">Frage 16</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> Welcher relative Link ist funktionsfähig? </h5>
+          <input type="radio" name="relLinkFrage">
+          <label>&lt;a href=".../ergebnisse/2023.html&quot;>Linktext&lt;/a&gt;</label><br>
+          <input type="radio" name="relLinkFrage">
+          <label>&lt;a href=”../ergebnisse/2023.html”&gt;&lt;/a&gt;</label><br>
+          <input type="radio" name="relLinkFrage" id="richtigRelLink">
+          <label>&lt;a href=”../ergebnisse/2023.html”&gt;Linktext&lt;/a&gt;</label><br>
+          <input type="radio" name="relLinkFrage">
+          <label>&lt;a href=”..\ergebnisse\2023.html”&gt;Linktext&lt;/a&gt;</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('relLinkFrage', 'richtigRelLink', 'druckerButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="pyramidenWeckerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage17">Frage 17</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> Wozu nutzt man CSS? </h5>
+          <input type="radio" name="cssFunktionFrage">
+          <label>Formularbewertung</label><br>
+          <input type="radio" name="cssFunktionFrage">
+          <label>Strukturierung</label><br>
+          <input type="radio" name="cssFunktionFrage" id="richtigCssFunktion">
+          <label>Grafische Gestaltung</label><br>
+          <input type="radio" name="cssFunktionFrage">
+          <label>Backendkommunikation</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormRechts('cssFunktionFrage', 'richtigCssFunktion', 'pyramidenWeckerButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('counterValueRechts').innerHTML = counterVal;
+</script>
+

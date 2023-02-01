@@ -1,0 +1,23 @@
+.endPageContent{
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.endPageText{
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.endPageButtons{
+  display: inline-flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+
+.buttonAnimate{
+  width: 10%;
+  height: 20%;
+}

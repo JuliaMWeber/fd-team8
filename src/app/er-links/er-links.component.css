@@ -1,0 +1,65 @@
+@import "../../main.css";
+@import "bootstrap";
+
+.bett {
+  height: 20%;
+  width: 30%;
+  position: absolute;
+  left: 67%;
+  top: 70%;
+  transform: scaleX(-1);
+}
+
+.schrank {
+  height: 40%;
+  width: 15%;
+  position: fixed;
+  left: 60%;
+  top: 45%;
+}
+
+.nachttisch {
+  height: 20%;
+  width: 7%;
+  position: absolute;
+  left: 22%;
+  top: 65%;
+}
+
+.rahmen1 {
+  height: 20%;
+  width: 7%;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}
+
+.rahmen2 {
+  height: 20%;
+  width: 7%;
+  position: absolute;
+  left: 42.5%;
+  top: 35%;
+}
+
+.rahmen3 {
+  height: 20%;
+  width: 7%;
+  position: fixed;
+  left: 55%;
+  top: 35%;
+}
+
+.rahmenRot {
+  background-color: cyan;
+}
+
+.rahmenGruen {
+  background-color: magenta;
+}
+
+.rahmenBlau {
+  background-color: yellow;
+}
+
+

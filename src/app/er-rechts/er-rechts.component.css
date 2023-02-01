@@ -1,0 +1,73 @@
+@import "../../main.css";
+@import "bootstrap";
+
+.fenster {
+  height: 40%;
+  width: 20%;
+  position: fixed;
+  top: 51%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.fensterHover {
+  height: 100%;
+  top: 19px;
+  animation: entenfenster 9000ms infinite;
+}
+
+.pyramidenRegal {
+  display: inline;
+  height: 50%;
+  width: 25%;
+  position: fixed;
+  top: 59%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.pyramidenWecker{
+  height: 8%;
+  width: 4%;
+  position: absolute;
+  left: 77%;
+  top: 57.5%;
+  animation: vibration 2s ease 0s infinite normal forwards;
+}
+
+.kommode {
+  height: 25%;
+  width: 20%;
+  position: fixed;
+  top: 73%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.druckerRegal {
+  height: 15%;
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+}
+
+.drucker {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: -25%;
+  left: 96%;
+
+}
+
+.druckerHover {
+  height: 120%;
+  top: 39%;
+  animation: druckerHover 8000ms infinite;
+}
+
+.druckerUnhover {
+  animation: druckerUnhover 8000ms infinite;
+}

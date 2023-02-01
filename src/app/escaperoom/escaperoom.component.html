@@ -1,0 +1,225 @@
+<div class="raum fullHeight" onmousemove="updateDisplayMitte(counterVal)">
+  <div class="escape-nav-btn fullHeight">
+    <button routerLink="/links" class="buttonAnimateNav">&#5130;</button>
+    <div>
+      <button id="lampenButtonMitte" class="mobiliar-btn lampe" data-bs-toggle="modal" data-bs-target="#lampenModal"><img
+        class="frageElement lampeImg esc-img" src="assets/images/lampe.png">
+      </button>
+    </div>
+    <div class="lampenschein">
+      <img class="esc-img" src="assets/images/Lampenschein.png">
+    </div>
+
+    <div id="counterMitte">
+      <div id="counterValueMitte">0</div>
+    </div>
+
+    <button routerLink="/rechts" class="buttonAnimateNav">&#5125;</button>
+  </div>
+  <div>
+    <button class="mobiliar-btn großesRegal" id="großesRegalButton" data-bs-toggle="modal" data-bs-target="#großesRegalModal"><img
+      class="frageElement esc-img" src="../../assets/images/er-mitte/großesRegal.png">
+    </button>
+  </div>
+  <div>
+    <button class="mobiliar-btn monstera" id="monsteraButton" data-bs-toggle="modal" data-bs-target="#monsteraModal">
+      <img class="esc-img" src="../../assets/images/er-mitte/monstera.png">
+    </button>
+  </div>
+  <div>
+    <button class="mobiliar-btn schreibtisch" id="schreibtischButton" data-bs-toggle="modal" data-bs-target="#schreibtischModal"><img
+      class="esc-img frageElement" src="../../assets/images/er-mitte/schreibtisch.png"></button>
+  </div>
+  <div class="mauszeiger">
+    <img class="esc-img" src="../../assets/images/er-mitte/mauszeiger.png">
+  </div>
+  <div>
+    <button class="mobiliar-btn kleinesRegal" id="kleinesRegalButton" data-bs-toggle="modal" data-bs-target="#kleinesRegalModal"><img
+      class="esc-img" src="../../assets/images/er-mitte/kleinesRegal.png"></button>
+
+    <div>
+      <button class="mobiliar-btn blauerWecker" id="blauerWeckerButton" data-bs-toggle="modal" data-bs-target="#blauerWeckerModal"><img
+        class="esc-img" src="../../assets/images/er-mitte/uhr.png"></button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modals --->
+
+<div class="modal fade" id="lampenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage1">Frage 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5> Für was wird JavaScript verwendet? <br>
+          </h5>
+          <input type="radio" class="wahr" name="jsVerwendungFrage" value="">
+          <label for="p">Anzeigen von Bildern</label><br>
+          <input type="radio" id="richtigJsVerwendung" name="jsVerwendungFrage" value="div">
+          <label for="div">Formularüberprüfung</label><br>
+          <input type="radio" class="wahr" name="jsVerwendungFrage" value="">
+          <label for="p">Styling der Seite</label><br>
+          <input type="radio" class="falsch" name="jsVerwendungFrage" value="div">
+          <label for="div">Kommunikation mit der Datenbank</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormMitte('jsVerwendungFrage', 'richtigJsVerwendung', 'lampenButtonMitte')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="großesRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage2">Frage 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Wie nennt man diesen Selektor? -> * </h5>
+        <input type="radio" class="wahr" id="richtigSelektor" name="selektorFrage" value="p">
+        <label for="p">Universalselektor</label><br>
+        <input type="radio" class="falsch" name="selectorFrage" value="div">
+        <label for="div">Gleichstellungsselektor</label><br>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormMitte('selektorFrage', 'richtigSelektor', 'großesRegalButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="monsteraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage3">Frage 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5> Wie viele Abstufungen von Überschriften gibt es? </h5>
+        <input type="radio" name="ueberschriftFrage" value="p">
+        <label for="p">3</label><br>
+        <input type="radio"  name="ueberschriftFrage" value="p">
+        <label for="p">6</label><br>
+        <input type="radio" id="richtigUeberschrift" name="ueberschriftFrage" value="div">
+        <label for="div">9</label><br>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate" data-bs-dismiss="modal"
+                onclick="ValidateFormMitte('ueberschriftFrage', 'richtigUeberschrift', 'monsteraButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="schreibtischModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage4">Frage 4</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h2> Für die Strukturierung des Inhalts verwendet man CSS? </h2>
+          <input type="radio"  name="strukturFrage" value="wahr">
+          <label for="p">Wahr</label><br>
+          <input type="radio" id="richtigStruktur"  name="strukturFrage" value="falsch">
+          <label for="div">Falsch</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormMitte('strukturFrage', 'richtigStruktur', 'schreibtischButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kleinesRegalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage5">Frage 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h2> Für die Strukturierung des Inhalts verwendet man HTML? </h2>
+          <input type="radio" class="wahr" id="richtigHTMLStruktur" name="strukturHTMLFrage" value="p">
+          <label for="p">Wahr</label><br>
+          <input type="radio" class="falsch" name="strukturHTMLFrage" value="div">
+          <label for="div">Falsch</label><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormMitte('strukturHTMLFrage', 'richtigHTMLStruktur', 'kleinesRegalButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="blauerWeckerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Frage6">Frage 6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h2> Welches der folgenden HTLM-Tags wird für einen Textabsatz genutzt?</h2>
+          <input type="radio" id="div" name="tagFrage" value="div">
+          <label for="div">div</label><br>
+          <input type="radio" id="p" name="tagFrage" value="p">
+          <label for="p">p</label><br>
+          <input type="radio" id="img" name="tagFrage" value="img">
+          <label for="img">img</label>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="buttonAnimate strukturButton" data-bs-dismiss="modal"
+                onclick="ValidateFormMitte('tagFrage', 'p', 'blauerWeckerButton')">
+          Speichern
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('counterValueMitte').innerHTML=counterVal;
+</script>
+
+
+
+
+
+
