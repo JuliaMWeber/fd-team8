@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <div @fadeIn class="footer">
+    <a name="footer"></a>
+    <div class="f-list">
+    <a class="nav-link" href="#"><img src="../../assets/images/logo.png" alt="Escape-Leranspiel" style="width:45px;height:45px;"></a>
+    <a class="nav-link" aria-current="page" href="#">Home</a>
+    <a class="nav-link" href="#vorstellung">Story</a>
+    <a class="nav-link" href="#spielregeln">Spielregeln</a>
+    <a class="nav-link" href="#erklaerung">Erklärung</a>
+    <a class="nav-link" routerLink="/escape">Escape-Room</a>
+  </div>
+    <div class="f-button">
+        <button class="footerEscape" routerLink="/escape">
+          <fa-icon class="door" [icon] ="faDoorOpen"  animation="bounce"></fa-icon>
+        </button>
+    </div>
+  </div>

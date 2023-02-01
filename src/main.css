@@ -135,13 +135,13 @@
 }
 
 .erklaerung-inner {
-	background-color: beige;
+	background-color: #b2e996;
 }
 
 /* One Pager */
 
 .p-5 {
-  background-color: beige;
+  background-color: #b2e996;
   display: grid;
   grid-template-columns: min-content 1fr;
   max-width: 800px;
@@ -155,7 +155,7 @@
 .text-right, .text-left{
   padding: 10px;
   /*width: 200px;  */ 
-  background-color: beige;
+  background-color: #b2e996
 }
 .h-img{
   max-width: 60%;
@@ -590,6 +590,42 @@
 	animation-delay: 10s;
 	opacity: 0;
 }
+
+
+/* Footer*/
+.footer{
+    margin: 10px;
+    padding: 10px;
+    background-color: #b2e996;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 800px;
+
+}
+.f-list {
+    text-align: left;
+    margin: 10px;
+    font-weight: bold;
+}
+.f-button{
+    text-align: right;
+}
+
+.footerEscape{
+    width: 50%;
+    background: none;
+    border: none;
+}
+
+.door {
+    margin-left: 250px;
+    font-size: 80px; 
+    color: #b5615f;
+    position: absolute;
+}
+
+
 
 
 /* Smartphone: */
