@@ -150,16 +150,16 @@
 
 @keyframes druckerHover {
 
-  0%,9% {
+  0%, 9% {
     opacity: 0;
   }
-  10%,19%{
+  10%, 19% {
     opacity: 1;
   }
-  20%, 29%{
+  20%, 29% {
     opacity: 0;
   }
-  30%, 39%{
+  30%, 39% {
     opacity: 1;
   }
   40%, 49% {
@@ -168,13 +168,13 @@
   50%, 59% {
     opacity: 1;
   }
-  60%, 69%{
+  60%, 69% {
     opacity: 0;
   }
-  70%,79%{
+  70%, 79% {
     opacity: 1;
   }
-  80%, 89%{
+  80%, 89% {
     opacity: 0;
   }
   90%,
@@ -189,16 +189,16 @@
 
 @keyframes druckerUnhover {
 
-  0%,9% {
+  0%, 9% {
     opacity: 1;
   }
-  10%,19%{
+  10%, 19% {
     opacity: 0;
   }
-  20%, 29%{
+  20%, 29% {
     opacity: 1;
   }
-  30%, 39%{
+  30%, 39% {
     opacity: 0;
   }
   40%, 49% {
@@ -207,13 +207,13 @@
   50%, 59% {
     opacity: 0;
   }
-  60%, 69%{
+  60%, 69% {
     opacity: 1;
   }
-  70%,79%{
+  70%, 79% {
     opacity: 0;
   }
-  80%, 89%{
+  80%, 89% {
     opacity: 1;
   }
   90%,
@@ -232,7 +232,7 @@
   height: 30%;
   width: 10%;
   position: absolute;
-  left: 42.25%;
+  left: 50%;
   top: 7%;
   transform: translate(-50%, -50%);
 }
@@ -241,16 +241,16 @@
   height: 30%;
   width: 15.5%;
   position: absolute;
-  left: 44.6%;
+  left: 50.1%;
   top: 49%;
   transform: translate(-50%, -50%);
- animation: lampenschein 13000ms infinite;
+  animation: lampenschein 13000ms infinite;
   animation-direction: alternate;
 }
 
 .mobiliar-btn {
-  background-color: Transparent;
-  border: none;
+  /*background-color: Transparent;
+  border: none; */
 
 }
 
@@ -258,6 +258,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  left: -50%;
   transform: translate(50%, -50%);
 }
 
