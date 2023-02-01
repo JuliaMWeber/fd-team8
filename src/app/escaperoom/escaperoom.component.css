@@ -1,19 +1,14 @@
 @import "../../main.css";
 @import "bootstrap";
 
-
-.mobiliar {
-  height: 100%;
-  width: 100%;
-  left: 50%;
-}
+/* Klassen */
 
 .schreibtisch {
   height: 45%;
   width: 25%;
   position: fixed;
   top: 65%;
-  left: 27%;
+  left:50%;
   transform: translate(-50%, -50%);
 }
 
@@ -32,7 +27,7 @@
   width: 14%;
   position: fixed;
   top: 68%;
-  left: 10%;
+  left: 20%;
   transform: translate(-50%, -50%);
 }
 
@@ -41,7 +36,7 @@
   width: 20%;
   position: absolute;
   top: 25%;
-  left: 3%;
+  left: 23%;
   transform: translate(-50%, -50%);
 }
 
@@ -51,7 +46,7 @@
   width: 20%;
   position: absolute;
   top: 35%;
-  left: 60%;
+  left: 77%;
   transform: translate(-50%, -50%);
 }
 
@@ -64,4 +59,9 @@
   animation: vibration 2s ease 0s infinite normal forwards;
 }
 
+/* Id's*/
+
+#lampenButtonMitte{
+
+}
 
