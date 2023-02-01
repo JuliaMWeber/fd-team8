@@ -1,271 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap";
+@import "css/animations.css";
+@import "css/escape-allg.css";
+@import "css/modals.css";
 
-/*Animationen*/
-@keyframes glowing {
-  0% {
-    background-color: transparent;
-    box-shadow: 0 1px 5px #eeeeee;
-  }
-  50% {
-    background-color: transparent;
-    box-shadow: 0 0 20px #7ed06e;
-  }
-  100% {
-    background-color: transparent;
-    box-shadow: 0 0 5px #eeeeee;
-  }
-}
-
-@keyframes vibration {
-  0% {
-    transform: translate(0);
-  }
-
-  10% {
-    transform: translate(-2px, -2px);
-  }
-
-  20% {
-    transform: translate(2px, -2px);
-  }
-
-  30% {
-    transform: translate(-2px, 2px);
-  }
-
-  40% {
-    transform: translate(2px, 2px);
-  }
-
-  50% {
-    transform: translate(-2px, -2px);
-  }
-
-  60% {
-    transform: translate(2px, -2px);
-  }
-
-  70% {
-    transform: translate(-2px, 2px);
-  }
-
-  80% {
-    transform: translate(-2px, -2px);
-  }
-
-  90% {
-    transform: translate(2px, -2px);
-  }
-
-  100% {
-    transform: translate(0);
-  }
-}
-
-.frageElement:hover {
-  animation: glowing 13000ms infinite;
-}
-
-@keyframes imgmove {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes imgmove1 {
-  0% {
-    opacity: 0;
-    transform: scale(50%);
-  }
-  20% {
-    opacity: 1;
-    transform: scale(50%);
-  }
-  40% {
-    opacity: 1;
-    transform: scale(50%);
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes entenfenster {
-
-  0% {
-    opacity: 0;
-  }
-  49% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 1
-  }
-  100% {
-    opacity: 0;
-  }
-
-}
-
-@keyframes druckerHover {
-
-  0%, 9% {
-    opacity: 0;
-  }
-  10%, 19% {
-    opacity: 1;
-  }
-  20%, 29% {
-    opacity: 0;
-  }
-  30%, 39% {
-    opacity: 1;
-  }
-  40%, 49% {
-    opacity: 0;
-  }
-  50%, 59% {
-    opacity: 1;
-  }
-  60%, 69% {
-    opacity: 0;
-  }
-  70%, 79% {
-    opacity: 1;
-  }
-  80%, 89% {
-    opacity: 0;
-  }
-  90%,
-  99% {
-    opacity: 1
-  }
-  100% {
-    opacity: 0;
-  }
-
-}
-
-@keyframes druckerUnhover {
-
-  0%, 9% {
-    opacity: 1;
-  }
-  10%, 19% {
-    opacity: 0;
-  }
-  20%, 29% {
-    opacity: 1;
-  }
-  30%, 39% {
-    opacity: 0;
-  }
-  40%, 49% {
-    opacity: 1;
-  }
-  50%, 59% {
-    opacity: 0;
-  }
-  60%, 69% {
-    opacity: 1;
-  }
-  70%, 79% {
-    opacity: 0;
-  }
-  80%, 89% {
-    opacity: 1;
-  }
-  90%,
-  99% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1;
-  }
-
-}
-
-/* Allgemeines für Escape-Room*/
-.lampe {
-  height: 30%;
-  width: 10%;
-  position: absolute;
-  left: 50%;
-  top: 7%;
-  transform: translate(-50%, -50%);
-}
-
-.lampenschein {
-  height: 30%;
-  width: 15.5%;
-  position: absolute;
-  left: 50.1%;
-  top: 49%;
-  transform: translate(-50%, -50%);
-  animation: lampenschein 13000ms infinite;
-  animation-direction: alternate;
-}
-
-.mobiliar-btn {
-  background-color: Transparent;
-  border: none;
-
-}
-
-.esc-img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: -50%;
-  transform: translate(50%, -50%);
-}
-
-.raum {
-  background-size: cover;
-  background: url("src/assets/images/raum.png") no-repeat fixed 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-}
-
-.escape-nav-btn {
-  display: flex;
-  justify-content: space-between;
-  padding: 1%;
-}
-
-.escape-nav-btn-l {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1%;
-}
-
+/*OnePager*/
 .navbar {
-  /*max-width: 800px;*/
+  max-width: 800px;
   text-align: center;
   margin: 0 auto;
 }
+
 
 .firstBody {
   box-sizing: border-box;
@@ -274,6 +19,7 @@
   margin: 0 auto;
   padding: 10px;
 }
+
 .oneBg{
   background-position-y: top;
   background-image: url("assets/images/er-rechts/pyramidenregal.png");
@@ -287,8 +33,6 @@
 	background-color: #b2e996;
 }
 
-/* One Pager */
-
 .p-5 {
   background-color: #b2e996;
   display: grid;
@@ -297,15 +41,18 @@
   text-align: center;
   margin: 0 auto;
 }
+
 .mb-3 {
  margin-top: 50px;
  text-align: center;
 }
+
 .text-right, .text-left{
   padding: 10px;
   /*width: 200px;  */
   background-color: #b2e996
 }
+
 .h-img{
   max-width: 60%;
   max-height: 60%;
@@ -338,12 +85,14 @@
 	width: 100%;
 	height: 150px;
 }
+
 .button-bg {
 	width: 100%;
 	height: 100px;
 	background-color: rgb(255, 255, 255);
 	opacity: 0.7;;
 }
+
 .erklärung {
 	width: 100%;
 }
@@ -366,6 +115,7 @@
 	position: relative;
 	top: -100px;
 }
+
 .odoor {
 	font-size: 75px;
 	color: #b5615f;
@@ -377,6 +127,7 @@
 .vorstellung {
 	width: 100%;
 }
+
 .spielvorstellung-image {
 	float: left;
 	left:0;
@@ -405,23 +156,7 @@
 	100% { transform: translate(200px,0px) rotate(359deg) }
 }
 */
-@keyframes imgmove {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
+
 .vorImg1 {
 	position: relative;
 	left:-90px;
@@ -520,49 +255,7 @@
 	width: 300px;
 }
 
-@keyframes imgmove1 {
-	0% {
-		opacity: 1;
-		transform: scale(100%);
-	}
-	20% {
-		opacity: 0;
-		transform: scale(95%);
-	}
-	40% {
-		opacity: 1;
-		transform: scale(100%);
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 
-@keyframes imgmove2 {
-	0% {
-		opacity: 0;
-		transform: scale(100%);
-	}
-	20% {
-		opacity: 1;
-		transform: scale(95%);
-	}
-	40% {
-		opacity: 0;
-		transform: scale(100%);
-	}
-	60% {
-		opacity: 1;
-		transform: scale(95%);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(100%);
-	}
-}
 
 /* One Pager Animationen*/
 
@@ -597,23 +290,6 @@
 	color: white;
 }
 
-@keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
 .galleryHtml figure:nth-of-type(2) {
 	animation-delay: 10s;
@@ -635,7 +311,7 @@
 	top: 0;
 	left: 2em;
 	z-index: 1;
-	animation: wechseln 15s infinite;
+	animation: imgmove 15s infinite;
 }
 
 .galleryCss figure:last-of-type {
@@ -650,24 +326,6 @@
 	bottom: 0.5em;
 	z-index: 2;
 	color: white;
-}
-
-@keyframes wechseln {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
 }
 
 .galleryCss figure:nth-of-type(2) {
@@ -695,7 +353,7 @@
 	top: 0;
 	left: 2em;
 	z-index: 1;
-	animation: wechseln 15s infinite;
+	animation: imgmove 15s infinite;
 }
 
 .galleryJs figure:last-of-type {
