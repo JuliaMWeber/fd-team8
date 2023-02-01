@@ -6,7 +6,7 @@
   width: 20%;
   position: fixed;
   top: 51%;
-  left: 40%;
+  left: 53%;
   transform: translate(-50%, -50%);
 }
 
@@ -22,7 +22,7 @@
   width: 25%;
   position: fixed;
   top: 59%;
-  left: 55%;
+  left: 80%;
   transform: translate(-50%, -50%);
 }
 
@@ -30,8 +30,8 @@
   height: 8%;
   width: 4%;
   position: absolute;
-  left: 77%;
-  top: 57.5%;
+  left: 78.5%;
+  top: 53.5%;
   animation: vibration 2s ease 0s infinite normal forwards;
 }
 
@@ -40,7 +40,7 @@
   width: 20%;
   position: fixed;
   top: 73%;
-  left: 30%;
+  left: 53%;
   transform: translate(-50%, -50%);
 }
 
@@ -49,7 +49,7 @@
   width: 30%;
   position: absolute;
   top: 40%;
-  left: 9%;
+  left: 25%;
   transform: translate(-50%, -50%);
 }
 
@@ -57,14 +57,14 @@
   height: 100%;
   width: 35%;
   position: absolute;
-  top: -25%;
-  left: 96%;
+  top: -63%;
+  left: 64%;
 
 }
 
 .druckerHover {
   height: 120%;
-  top: 39%;
+  top: 76.9%;
   animation: druckerHover 8000ms infinite;
 }
 
