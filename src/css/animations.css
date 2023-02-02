@@ -1,15 +1,15 @@
 @keyframes glowing {
   0% {
     background-color: transparent;
-    box-shadow: 0 1px 5px #eeeeee;
+    box-shadow: 0 1px 10px #eeeeee;
   }
   50% {
     background-color: transparent;
-    box-shadow: 0 0 20px #7ed06e;
+    box-shadow: 0 0 30px #f2f3f2;
   }
   100% {
     background-color: transparent;
-    box-shadow: 0 0 5px #eeeeee;
+    box-shadow: 0 0 10px #eeeeee;
   }
 }
 
