@@ -10,7 +10,7 @@
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
-  
+
 }
 */
 .firstBody {
@@ -427,12 +427,11 @@ header{
   transition: 0.4s ease-in-out;
 }
 @media(max-width: 375px){
-  
+
   .menu{
     /*position: fixed;*/
     position: relative;
-    right: -280px;
-    top:64;
+    right: -380px;
     width: 280px;
     height: 100%;
     background: white;
@@ -458,7 +457,7 @@ header{
     display: block;
     transition: 0.2s ease-in-out;
   }
-  
+
   .menu_icon span:nth-child(2) {
     margin: 4px 0;
   }
