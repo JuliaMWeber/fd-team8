@@ -1,42 +1,44 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-  <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarExample01"
-      aria-controls="navbarExample01"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarExample01">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><img src="../../assets/images/logo.png" alt="Escape-Leranspiel" style="width:20px;height:20px;"></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#vorstellung">Story</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#spielregeln">Spielregeln</a>
-        </li>
-        <li class="nav-item">
-          <!--<a class="nav-link" href="#html">Erklärung</a> -->
-          <a class="nav-link" href="#erklaerung">Erklärung</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/escape">Escape-Room</a>
-        </li>
-      </ul>
+
+<header>
+  <div  class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-3">
+
+      </div>
+      <div class="col-md-12 col-sm-12 col-12 text-end">
+        <div class="menu_icon" [class.menu_iconClass]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+         <div class="menu" [class.menuClasse]="menuVariable">
+
+          <ul>
+           <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#vorstellung">Story</a>
+            </li>
+            <li>
+              <a href="#spielregeln">Spielregeln</a>
+            </li>
+            <li>
+              <a href="#erklaerung">Erklärung</a>
+            </li>
+            <li>
+              <a routerLink="/escape">Escape-Room</a>
+            </li>
+           <li>
+              <a routerLink="/quellen">Quellen</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
   </div>
-</nav>
-<!-- Navbar -->
+</header>
 
 <!-- Jumbotron -->
 <div class="p-5">
