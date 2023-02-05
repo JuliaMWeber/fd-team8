@@ -5,12 +5,14 @@
 @import "css/modals.css";
 
 /*OnePager*/
+/*
 .navbar {
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
+  
 }
-
+*/
 .firstBody {
   box-sizing: border-box;
   max-width: 800px;
@@ -391,5 +393,87 @@
   padding: 1em 2em;
 }
 
+header{
+
+  padding:12px 0;
+  background-color: white;
 
 
+}
+.menu{
+ margin-top: 10px;
+}
+.menu ul{
+  padding: 0;
+  margin:0;
+
+}
+
+.menu ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  text-transform: uppercase;
+
+}
+.menu ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+.menu ul li a:hover{
+  color: #b2e996;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+@media(max-width: 375px){
+  
+  .menu{
+    /*position: fixed;*/
+    position: relative;
+    right: -280px;
+    top:64;
+    width: 280px;
+    height: 100%;
+    background: white;
+    transition: 0.4s ease-in-out;
+  }
+  .menu ul li {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0 20px 26px;
+    border-bottom: 1px solid white;
+  }
+  .menu_icon{
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: 20 px;
+  }
+  .menu_icon span {
+    width: 32px;
+    height: 3px;
+    background: black;
+    display: block;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .menu_icon span:nth-child(2) {
+    margin: 4px 0;
+  }
+  .menu_iconClass span:nth-child(2){
+    display: none;
+  }
+  .menu_iconClass span:nth-child(1){
+    transform: rotate(40deg);
+  }
+  .menu_iconClass span:nth-child(3){
+    transform: rotate(-40deg);
+    margin-top: -3px;
+  }
+  .menuClasse{
+    right: 0;
+    transition: 0.4s ease-in-out;
+  }
+}
