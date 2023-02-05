@@ -159,8 +159,8 @@
 
 .vorImg4 {
   position: relative;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   height: 300px;
   width: 300px;
 }
@@ -206,7 +206,7 @@
 
 .regelImg2 {
   position: relative;
-  left: 0px;
+  left: 0;
   top: -470px;
   height: 180px;
   width: 295px;
@@ -228,8 +228,8 @@
 /* Blume */
 .regelImg4 {
   position: relative;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   height: 300px;
   width: 300px;
 }
@@ -378,57 +378,57 @@
   margin-left: 25%;
 }
 
-/*
-.f-button{
-    text-align: right;
-}
-*/
 .footerEscape {
   width: 50%;
   background: none;
   border: none;
 }
 
-.HTML, .CSS, .JS{
+.HTML, .CSS, .JS {
   padding: 1em 2em;
 }
 
-header{
+header {
 
-  padding:12px 0;
+  padding: 12px 0;
   background-color: white;
 
 
 }
-.menu{
- margin-top: 10px;
+
+.menu {
+  margin-top: 10px;
 }
-.menu ul{
+
+.menu ul {
   padding: 0;
-  margin:0;
+  margin: 0;
 
 }
 
-.menu ul li{
+.menu ul li {
   list-style-type: none;
   display: inline-block;
   margin-left: 20px;
   text-transform: uppercase;
 
 }
-.menu ul li a{
+
+.menu ul li a {
   list-style: none;
   text-decoration: none;
   color: black;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
   color: #b2e996;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
-@media(max-width: 375px){
 
-  .menu{
+@media (max-width: 375px) {
+
+  .menu {
     /*position: fixed;*/
     position: relative;
     right: -380px;
@@ -437,6 +437,7 @@ header{
     background: white;
     transition: 0.4s ease-in-out;
   }
+
   .menu ul li {
     display: block;
     text-align: left;
@@ -444,12 +445,14 @@ header{
     padding: 20px 0 20px 26px;
     border-bottom: 1px solid white;
   }
-  .menu_icon{
+
+  .menu_icon {
     display: inline-block;
     position: relative;
     right: 0;
-    top: 20 px;
+    top: 20px;
   }
+
   .menu_icon span {
     width: 32px;
     height: 3px;
@@ -461,17 +464,21 @@ header{
   .menu_icon span:nth-child(2) {
     margin: 4px 0;
   }
-  .menu_iconClass span:nth-child(2){
+
+  .menu_iconClass span:nth-child(2) {
     display: none;
   }
-  .menu_iconClass span:nth-child(1){
+
+  .menu_iconClass span:nth-child(1) {
     transform: rotate(40deg);
   }
-  .menu_iconClass span:nth-child(3){
+
+  .menu_iconClass span:nth-child(3) {
     transform: rotate(-40deg);
     margin-top: -3px;
   }
-  .menuClasse{
+
+  .menuClasse {
     right: 0;
     transition: 0.4s ease-in-out;
   }
